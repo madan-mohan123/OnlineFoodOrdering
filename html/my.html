@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            padding: 0;
+            margin: 0;
+        box-sizing: border-box;
+        }
+          header{
+            /* background-color: rgb(51, 49, 49); */
+            background-color:rgb(43, 42, 46);
+            height: 80px;
+            padding: 0 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 5;
+         
+        }
+      
+        nav{
+            float: right;
+        }
+        nav ul li{
+            list-style: none;
+            display: inline-block;
+            line-height: 80px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            font-size: 17px;
+            color: white;
+            padding: 5px 20px;
+            border-radius: 10px;
+            text-transform: uppercase;
+            transition: 0.6s;
+        }
+        nav a:hover{
+background-color: rgb(81, 31, 160);
+
+color:rgb(206, 204, 209);
+
+        }
+        nav a[href="#1"]:hover{
+            background-color: orangered;
+            position: relative;
+            top:0;
+            border-bottom:5px solid orange;
+            border-top:5px solid orange;
+            
+        }
+        nav a[href="#"]:hover{
+            background-color: orangered;
+            position: relative;
+            top:0;
+           
+            
+        }
+       
+        header img{
+            border-radius: 20px 0 20px 0;
+            width:120px;
+             height:70px;
+             padding-top: 5px;
+             float:left;
+          
+            position: relative;
+            left: 0;
+            z-index: 1;  
+        }
+        header p{
+            
+            display: inline-block;
+            line-height: 80px;
+            margin-left: 50px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+            color:rgb(209, 209, 200);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../images/r1.png"  alt="">
+        <p>Go <span style="color: rgb(180, 17, 17); opacity: 0.7;font-size:30px;">Fast</span></p>
+       <nav>
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="../html pages/signup.html">signup</a></li>
+            <li><a href="../html pages/LogIn.html">login</a></li>
+            <li ><a href="../html pages/search.html" style="background-color: teal;font-size: 20px; text-transform: none;padding: 10px 20px;">Search</a></li>
+           
+        </ul>
+       </nav>
+    </header>
+</body>
+</html>

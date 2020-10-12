@@ -4,764 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
-    <title>Template</title>
-    
+    <link rel="stylesheet" href="css files/index.css">
+    <title>Hot Food</title>
     <style>
-        *{
-            padding: 0;
-            margin: 0;
-        box-sizing: border-box;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
         body{
-            background-color: orange;
-          
-        }
-      
-        header{
-            
-            /* background-color:rgba(53, 3, 68,0.9); */
-            background-image: linear-gradient(45deg,red,orange,teal);
-            height: 80px;
-            padding: 0 20px;
-            width: 100%;
-           
-           
-         
-        }
-      
-        nav{
-            float: right;
-        }
-        nav ul li{
-            list-style: none;
-            display: inline-block;
-            line-height: 80px;
-        }
-        nav ul li a{
-          
-            text-decoration: none;
-            font-size: 17px;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 10px;
-            text-transform: uppercase;
-            transition: 0.6s;
-        }
-        nav a:hover{
-background-color: rgb(57, 50, 68);
-
-color:rgb(206, 204, 209);
-
-        }
-      
-       
-        header img{
-            border-radius: 20px 0 20px 0;
-            width:120px;
-             height:70px;
-             padding-top: 5px;
-             float:left;
-          
-            position: relative;
-            left: 0;
-            z-index: 1;  
-        }
-        header p{
-            
-            display: inline-block;
-            line-height: 80px;
-            margin-left: 50px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 20px;
-            color:rgb(209, 209, 200);
-        }
-        .section-1 {
-    background-image: url(images/r2.jpg);
+        background-image: url(images/pro2.png);
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
-height: 900px;
-width: 100%;
-position: relative;
-left: 0;
-right: 0;
-/* border: 3px solid green; */
-
-}
-.section-1 .heading{
-    position: absolute;
-    top:30%;
-    left:5%;
-    right: 5%; 
-    /* border: 2px solid black; */
-}
-.section-1 p{
-    font-size: 90px;
-    /* position: absolute;
-    top:30%;
-    left:5%;
-    right: 5%; */
-    color: rgb(235, 229, 229);
-    text-align: center;
-    padding-bottom: 30px;
-   text-shadow: 0 1px 20px 5px rgb(211, 106, 106);
-}
-
-
-.section-1 h2{
-    /* position: absolute;
-    top:46%;
-    left:30%;
-    right: 30%; */
-    color: white;
-    text-align: center;
-    opacity: 0.8;
-    
-}
-.section-1 a{
-    position: absolute;
-    bottom:15%;
-    left:47%;
-    display: block;
-    padding: 15px 40px;
-    border-radius: 30px;
-    background-color: rgb(226, 150, 8);
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-    border: 2px solid rgb(211, 24, 24);
-}
-.section-1 a:hover{
-    border: 2px solid black;
-    opacity: 0.8;
-    background-color: darkslategrey;
-}
-.section-1 .icon{
-    width: 100%;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom:5%;
-}
-.section-1 i{
-    font-size: 30px;
-    color:white;
-    padding: 50px; 
-   
-}
-
-.section-2{
-    
-    width: 100%;
-    padding-bottom: 50px;
-    
-    background-color: rgb(209, 197, 197);
-}
-.section-2 p{
-    padding-top: 50px;
-    font-size: 70px;
-    text-align: center;
-}
-.section-2 .cards{
-    width: 22%;
-    height: 400px;
-   border-radius: 30px;
-   background-color: white;
-   margin-left: 40px;
-   float: left;
-   transition: 0.6s;
-  
-    box-shadow: 0 1px 20px 5px white;
-}
-
-.section-2 .cards img{
-    border-radius: 30px;
-    width: 100%;
-    height: 200px;
-    margin-bottom: 30px;
-}
-.section-2 a{
-    display: inline-block;
-  padding: 15px 70px;
-  border-radius: 30px;
-  background-color: rgb(226, 150, 8);
-  color: white;
-  font-size: 20px;
-  text-decoration: none;  
-  margin-left: 30px;
-}
-.section-2 a:hover{
-    border: 2px solid black;
-}
-.section-2 .cards:hover{
-   opacity: 0.9;
-   position: relative;
-   top:-15px;
-   background-image: linear-gradient(rgb(99, 37, 37),rgb(105, 90, 105),orangered);
- 
-}
-.section-3{
-    /* border: 3px solid green; */
-    width: 100%;
-    /* height: 600px; */
-    padding: 80px 40px;
-}
-.section-3 p{
-    font-size: 90px;
-    text-align: center;
-}
-.section-3 .mhow{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.section-3 .how{
-    display: inline-block;
-    margin-right: 90px;
-    /* border: 2px solid black; */
-}
-.section-3 .how img{
-    border-radius: 50%;
-}
-
-.section-3 figcaption{
-    margin-top: 30px;
-    text-align: center;
-    color: white;
-}
-.section-4{
-    /* border: 3px solid green; */
-    background-image: url(images/r2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 500px;
-    padding: 40px;
-    position: relative;
-    left: 0;
-    right: 0;
-    overflow: hidden;
-}
-.section-4 >img{
-    position: absolute;
-    right: 0;
-    top: 100px;
-    z-index: 1;
-    width: 400px;
-    height: 500px;
-  
-  
-}
-.section-4 p{
-    /* padding-top: 60px; */
-    font-size: 80px;
-    color: white;
-    /* padding-left: 40px; */
-}
-.section-4 .mhow{
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top:70%;
-    left: 0;
-    
-    /* border: 1px solid black; */
-    
-}
-.section-4 .mhow i{
-    margin-right: 80px;
-    color: white;
-    font-size: 50px;
-    
-   
-
-}
-.section-5{
-    /* clear: both; */
-    width: 100%;
-    /* height: 700px; */
-    /* background-color: rgb(221, 210, 210); */
-    padding: 70px 0px;
-   
-    border-top:2px solid rgba(39, 38, 38,0.7); 
-    border-bottom:2px solid rgba(39, 38, 38,0.7); 
-}
-.section-5 > p{
-    padding-top: 40px;
-    padding-bottom: 20px;
-    font-size: 90px;
-    color: rgb(8, 3, 3);
-    text-align: center;
-}
-.section-5 .cards1{
-    /* border:2px solid black; */
-    width: 22%;
-    height: 400px;
-   border-radius: 30px;
-   background-color: white;
-   margin-left: 35px;
-   float: left;
-   padding-bottom: 60px;
-   transition: 0.5s;
-}
- .section-5 .cards1 img{
-    border-radius: 30px;
-    width: 100%;
-    height: 200px;
-    margin-bottom: 30px;
-}
-.section-5 .cards1 p{
-    font-size: 15px;
-    margin: 10px auto;
-    width: 130px;
-    padding: 10px 20px;
-    background-color: orange;
-    border-radius: 20px;
-}
-
-
-.section-5 .cards1 p:hover{
-    border: 2px solid black;
-}
-
-.section-5 .cards1:hover {
-    
-    transform: rotateY(25deg);
-  
-    background-image: linear-gradient(red,rgb(255, 0, 242),rgb(55, 0, 128));
-    box-shadow: 0 1px 10px 3px white;
-}
-
-.section-5::after{
-    display: block;
-    content: '';
-    clear: both;
-}
-.fa-clock-o{
-    margin-right: 20px;
-}
-  .fa-cutlery{
-    margin-right: 20px;
-  }
-.fa-mobile{
-    margin-right: 20px;
-}
-.section-6{
-    width: 100%;
-    /* height: 900px; */
-    background-color: rgb(18, 92, 189);
-    padding-bottom: 30px;
-    position: relative;
-    left:0;
-}
-.section-6 .deal{
-    width: 80%;
-    height: 600px;
-    margin: auto;
-    border-radius: 50px;
-    background-color: white;
-    position: relative;
-    left:0;
-    transition: 0.6s;
-}
-.section-6 .deal img{
-    width: 100%;
-    height: 400px;
-    border-radius: 50px;
-    position: absolute;
-    left:0;
-    right: 0;
-   
-    
-}
-.deal .circle{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* height: 100px; */
-    /* border: 2px solid black; */
-    position: absolute;
-    top:150px;
-    
-}
-.deal .circle1,.circle2,.circle3,.circle4{
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background-color: white;
-   padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 80px;
-    transition: 0.5s;
-}
-.section-6 h2{
-    position: absolute;
-    top:70%;
-    left: 45%;
-   
-}
-.section-6 a{
-    position: absolute;
-    color: wheat;
-    top:85%;
-    left: 45%;
-    padding: 10px 40px;
-    background-color: orangered;
-    border-radius: 20px;
-    text-decoration: none;
-}
-.section-6 a:hover{
-    border: 2px solid black;
-box-shadow: 0 1px 10px 3px rebeccapurple;
-}
-.deal .circle1:hover,.circle2:hover,.circle3:hover,.circle4:hover{
-background-color: rgba(41, 35, 35, 0.7);
-transform: rotate(360deg);
-color: white;
-}
-.section-6 .deal:hover{
-  background-color: rgb(22, 21, 19);
-  
-  transform: rotateX(20deg);
-}
-
-.section-7{
-    /* clear: both; */
-    width: 100%;
-    
-    padding: 70px 0px;
-    border-top:2px solid rgba(39, 38, 38,0.7);
-    border-bottom:2px solid rgba(39, 38, 38,0.7);
-}
-.section-7 p{
-    padding-top: 40px;
-    padding-bottom: 20px;
-    font-size: 90px;
-    color: rgb(8, 3, 3);
-    text-align: center;
-}
-.section-7 .cards1{
-    /* border:2px solid black; */
-    width: 26%;
-    height: 400px;
-   border-radius: 30px;
-   background-color: white;
-   margin-left: 70px;
-   float: left;
-   padding-bottom: 60px;
-   /* border:2px solid rgb(199, 48, 48); */
-   box-shadow: 0 1px 10px 3px rgb(83, 72, 94);
-   transition: 0.5s;
-}
- .section-7 .cards1 img{
-    border-radius: 30px;
-    width: 100%;
-    height: 230px;
-    margin-bottom: 30px;
-}
-.section-7 .cards1:hover{
-    transform: rotateX(25deg);
-    /* background-color: rgba(220,20,60,0.8); */
-    /* box-shadow: 0 1px 10px 3px rebeccapurple; */
-    background-image: linear-gradient(rgb(109, 61, 61),rgba(255, 238, 0, 0.527),rgb(39, 177, 177));
- 
-}
-.section-7 .cards1 p:hover{
-border: 2px solid black;
-
- box-shadow: 0 1px 10px 3px rgb(176, 142, 211);
-
-}
-.section-7::after{
-    display: block;
-    content: '';
-    clear: both;
-}
-.section-7 .cards1 p{
-    width: 140px;
-    background-color:orange;
-    color: rgb(238, 228, 228);
-    margin: 20px auto;
-    font-size: 20px;
-    padding: 10px 30px;
-    border-radius: 20px;
-    /* box-shadow: 0 1px 10px 3px rgb(176, 142, 211); */
-}
-.footer{
-         
-         width: 100%;
-         /* background-color: #2f3640; */
-         background-color:rgb(255, 102, 0);
-         padding:40px 20px;
-        
-     }
-     
-
-   
-    .mycontent{
-      width: 100%;
-      height: 220px;
-      border-bottom:2px solid rgba(255,255,255,0.1);
-  }
-      .mycontent .about{
-          float: left;
-          height: 200px;
-          width: 30%;
-          margin-right: 50px;
-          overflow: hidden;
-      }
-      .mycontent  .about h2{
-color:white;
-text-transform: uppercase;
-margin-bottom: 30px;
-
-      }
-      .mycontent .about p{
-          color:white;
-          opacity:0.5;
-    text-align: justify;
-      }
-      .mycontent .link{
-          float: right;
-          width: 20%;
-          height: 200px;
-      }
-      .mycontent .link p{
-          color:white;
-text-transform: uppercase;
-margin-bottom: 30px;
-      }
-      .mycontent .link ul{
-          list-style: none;
-      }
-      .mycontent .link ul li{
-          margin: 5px;
-      }
-      .mycontent .link ul li a{
-         color: white; 
-         text-decoration: none;
-         opacity:0.5;
+        }
        
-      }
-       .mycontent::after{
-          content: '';
-          clear: both;
-          display: block;
-      }
-     
-      .social{
-          width: 100%;
-          border-top:2px solid rgba(255,255,255,0.1);
-          margin-top:50px;
-          padding-top: 40px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-      }
-      .social i{
-color: white;
-font-size: 20px;
-    }
-    .social .face{
-        margin:20px;
-padding:15px;
-        border-radius: 100%;
-        background-color: rgb(106, 106, 206);
-    }
-    .social .insta{
-        margin:20px;
-padding:15px;
-        border-radius: 100%;
-        background-color: purple;
-    }
-    .social .twit{
-        margin:20px;
-padding:15px;
-        border-radius: 100%;
-        background-color: skyblue;
-
-    }
-    .social .linked{
-        margin:20px;
-padding:15px;
-        border-radius: 100%;
-        background-color: blueviolet;
-    }
-    .social .gmail{
-        margin:20px;
-padding:15px;
-        border-radius: 100%;
-        background-color: red;
-    }
-
-    .social .insta:hover,.face:hover,.gmail:hover,.twit:hover,.linked:hover{
-        background-color:rgb(219, 186, 0)
-    }
-    .last{
-                color:whitesmoke;
-      display: block;
-      width: 180px;
-        margin: 0 auto;
-        margin-top: 20px;
-        opacity: 0.5;
-    }
-
-
-
-
-    .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-  padding: 30px 0;
-}
-
-.mySlides img{
-    width: 800px;
-    height: 500px;
-    border-radius: 20px;
-}
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  /* from {opacity: .4} 
-  to {opacity: 1} */
-}
-
-@keyframes fade {
-  /* from {opacity: .4} 
-  to {opacity: 1} */
-}
-
-
-
-nav ul li:hover .menu{
-    display: block;
-    
-}
-.menu{
-    padding: 20px;
-    position:absolute;
-    right: 10px;
-    top:80px;
-    width: 700px;
-    z-index: 6;
-   display: none;
-    background-image: linear-gradient(rgb(19, 20, 20),rgb(59, 59, 59));
-}
-
-.menu ul li{
-    display: block;
-   
-    height: 40px;
-    line-height: 40px;
-    
-    
-    
-}
-.menu ul li a{  
-  /* display: flex;
-  justify-content: space-around; */
-    font-size: 15px;
-    color: white;
-    padding: 7px 20px;
-    border-radius: 0px;
-    transition: 0.5s; 
-    margin: 7px;   
-}
-.menu ul li a:hover{    
-/* border-left:5px solid White; */
-color: white;
-background-color: rgb(95, 90, 95);
-border-radius: 20px;
-
-}
-
-        
-        
     </style>
+   
 </head>
 <body>
     <div class="container">
@@ -770,6 +24,7 @@ border-radius: 20px;
             <p><b>Order <span style="color: rgb(9, 223, 238); opacity: 0.7;font-size:30px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> Food Now</span></b></p>
            <nav>
             <ul>
+                <li><a href="#" class="bar">B</a></li>
                 <li><a href="#">home</a></li>
                 
                 <li>
@@ -805,12 +60,11 @@ border-radius: 20px;
                         </ul>
                     </div>
                     </li>
-                    <li><a href="#">Join</a></li>
+                    <li><a href="html/signup.html">Join</a></li>
 
                 </li>
-                
-                <!-- <li ><a href="html pages/search.html" style="background-color: teal;font-size: 20px; text-transform: none;padding: 10px 20px;">Search</a></li> -->
-               
+                <li><a href="#" class="cbar">C</a></li> 
+              
             </ul>
            </nav>
         </header>
@@ -819,7 +73,7 @@ border-radius: 20px;
             <p> ORDER TAKE AWAY ONLINE</p>
             <h2 style="color: white;text-align: center;">FROM YOUR FAVORITE RESTAURENT</h2>
         </div>
-            <a href="#">Menu</a>
+            <a href="html/Search.html">Menu</a>
             <div class="icon">
             <i class="fa fa-clock-o" aria-hidden="true"> 24/7 Delivery</i>
             <i class="fa fa-cutlery" aria-hidden="true"> 100 Restaurants</i>
@@ -830,7 +84,7 @@ border-radius: 20px;
         </section>
         <section class="section-2">
 <p>MORE THAN <span style="color:orange">500+ DISHES</span>  TO ORDER</p>
-<h2 style="text-align: center;color: gray;opacity: 0.8;margin-bottom: 40px;"> Welcome to the best online ordering services</h2>
+<h2 style="text-align: center;color: white;opacity: 0.8;margin-bottom: 40px;"> Welcome to the best online ordering services</h2>
 <div class="cards">
     <img src="images/burger.jpg" alt="">
     <h2 style="text-align: center;">Burger</h2>
@@ -852,13 +106,13 @@ border-radius: 20px;
     <h2 style="text-align: center;">Itali</h2>
     <h3 style="text-align: center;color: gray;opacity: 0.8;margin-top: 20px;">Choose your Itali</h3>
 </div>
-<h2 style="margin-top: 70px;margin-left: 30%; display: inline-block; text-align: center; opacity: 0.7;">Much more your favorite food</h2>
-<a href="#">More category</a>
+<!-- <h2 style="margin-top: 70px;margin-left: 30%; display: inline-block; text-align: center; opacity: 0.7;">Much more your favorite food</h2> -->
+<a href="html/Search.html">More category</a>
         </section>
 
          <section class="section-3">
 <p>HOW TO ORDER ?</p>
-<h3 style="text-align: center;opacity: 0.7;color: gray;margin: 20px 0 40px 0;">Follow the steps</h3>
+<h3 style="text-align: center;opacity: 0.9;color: gray;margin: 20px 0 40px 0;">Follow the steps</h3>
 <div class="mhow">
 <div class="how">
 <img src="images/loc.png" width="200px" height="200px" alt="">
@@ -893,7 +147,7 @@ border-radius: 20px;
 
        <section class="section-5">
            <p>WHAT'S POPULAR</p>
-           <h2 style="text-align: center;opacity: 0.7;color: gray;margin-bottom: 40px;">Client's favorite</h2>
+           <h2 style="text-align: center;opacity: 0.9;color: gray;margin-bottom: 40px;">Client's favorite</h2>
            <div class="cards1">
             <img src="images/f2.jpg" alt="">
            
@@ -932,14 +186,14 @@ border-radius: 20px;
            <article class="circle3"><span style="color: rgb(230, 9, 64);margin-right: 10px;"><b> Minutes</b> </span> 6</article>
            <article class="circle4"><span style="color: rgb(230, 9, 64);margin-right: 10px;"><b> Seconds</b> </span> 78</article>
            </article>
-           <h2 style="text-align: center;color: rgb(126, 119, 119);margin: 50px 0 20px 0;">More Details</h2>
+           <!-- <h2 style="text-align: center;color: rgb(126, 119, 119);margin: 50px 0 20px 0;">More Details</h2> -->
            <a href="#">Click Here</a>
            </article>
            
        </section>
        <section class="section-7">
         <p>New Dishes</p>
-        <h2 style="text-align: center;opacity: 0.7;color: gray;margin-bottom: 40px;">Get Order Now</h2>
+        <h2 style="text-align: center;opacity: 0.9;color: gray;margin-bottom: 40px;">Get Order Now</h2>
         <div class="cards1">
          <img src="images/f2.jpg" alt="">
          <h2 style="text-align: center;">Burger</h2>
@@ -958,42 +212,41 @@ border-radius: 20px;
      </div>
      
        </section>
-
-       <!-- clien -->
-      <!-- Slideshow container -->
+<h1 style="text-align: center;margin: 30px;color: white;">Our Best Cook's</h1>
+     
 <section class="slideshow-container">
 
-    <!-- Full-width images with number and caption text -->
     <div class="mySlides fade">
-      <!-- <div class="numbertext">1 / 3</div> -->
-      <img src="images/f1.jpg" style="width:100%">
-      <div class="text">Caption Text</div>
+  
+      <img src="../semester-5/images/avatar1.png" >
+      <div class="text"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae minus repellat cumque fuga id! Ipsum dignissimos fuga praesentium doloremque eaque illum nisi, aliquam tenetur eligendi. Quas incidunt nostrum at neque.
+
+      </p>
+    </div>
     </div>
   
     <div class="mySlides fade">
-      <!-- <div class="numbertext">2 / 3</div> -->
-      <img src="images/r1.png" style="width:100%">
-      <div class="text">Caption Two</div>
+    
+      <img src="../semester-5/images/avatar2.png" >
+     <div class="text"><p>Lorem ipsum, djksjlkjljas Beatae minus repellat cumque fuga id! Ipsum dignissimos fuga praesentium doloremque eaque illum nisi, aliquam tenetur eligendi. Quas incidunt nostrum at neque.
+   </p>
+    </div>
     </div>
   
     <div class="mySlides fade">
-      <!-- <div class="numbertext">3 / 3</div> -->
-      <img src="images/r4.jpg" style="width:100%">
-      <div class="text">Caption Three</div>
+     
+      <img src="../semester-5/images/avatar3.png" >
+      <div class="text"><p>Lorem ipsumcnknkdjlksc pisicing elit. Beatae minus repellat cumque fuga id! Ipsum dignissimos fuga praesentium doloremque eaque illum nisi, aliquam tenetur eligendi. Quas incidunt nostrum at neque.
+    </p>
+</div>
     </div>
   
-    <!-- Next and previous buttons -->
+  
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </section>
   <br>
-  
-  <!-- The dots/circles -->
-  <!-- <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span> 
-    <span class="dot" onclick="currentSlide(2)"></span> 
-    <span class="dot" onclick="currentSlide(3)"></span> 
-  </div> -->
+
        
        <div class="footer">
         <div class="mycontent">
@@ -1040,20 +293,32 @@ border-radius: 20px;
         </div>
        
         <script>
-           var slideIndex = 0;
-showSlides();
+  var slideIndex = 1;
+showSlides(slideIndex);
 
-function showSlides() {
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+
+function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
+
+  if (n > slides.length) {
+      slideIndex = 1
+      } 
+  if (n < 1) {
+      slideIndex = slides.length
+      }
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none"; 
+      slides[i].style.display = "none"; 
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1} 
+
   slides[slideIndex-1].style.display = "block"; 
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-} 
+
+}
         </script>
 </body>
 </html>

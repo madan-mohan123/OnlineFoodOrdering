@@ -1,191 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="../css files/signup.css"> -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="../css_files/signup.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
 
     <title>Signin</title>
     <style>
-         *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: sans-serif;
-        }
-        a{
-            text-decoration: none;
-        }
-        body{
-            background-image: linear-gradient(45deg,red,orange,teal);
-            /* background-image: linear-gradient(rgb(59, 33, 202),rgb(228, 34, 228)); */
-            height: 100vh;
-        }
-        .container-2{
-            padding-top: 20px;
-            width:400px;
-            height: 500px;
-            background-color:white;
-            margin:100px auto;
-            border-radius: 30px;
-       
-        }
-        .container-2 img{
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            box-shadow: 0 0 10px 3px orange;
-            margin:auto;
-      
-            display: block;
-        }
-               .container-2  h2{
-            color: rgb(223, 17, 17);
-            text-align: center;
-            /* text-shadow: 2px 2px 2px 2px orange; */
-            padding: 30px 0 20px 0;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      a {
+        text-decoration: none;
+      }
+      body {
+        background-image: linear-gradient(45deg, red, orange, teal);
+        /* background-image: linear-gradient(rgb(59, 33, 202),rgb(228, 34, 228)); */
+        height: 100vh;
+      }
+      .container-2 {
+        padding-top: 20px;
+        width: 400px;
+        height: 500px;
+        background-color: white;
+        margin: 100px auto;
+        border-radius: 30px;
+      }
+      .container-2 img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        box-shadow: 0 0 10px 3px orange;
+        margin: auto;
 
-        .container-2 .social{
-           display: flex;
-           justify-content: center;
-           align-items: center;
-           width: 100%;
-           height: 50;
-       }
-  
-        .container-2 label{
-            display: block;
-            margin-left: 40px;
-          
-        }
-       .container-2 .field{
-            display: block;
-            width: 80%;
-            margin:30px auto;
-            border: hidden;
-            height: 40px;
-            border-bottom: 2px solid rgba(10, 10, 10,0.5);
-       background-color: white;   
-        }
-         
-       .container-2 input[type="submit"]{
-           
-           display: block;
-/* background-color: rgb(224, 77, 24); */
-width: 120px;
-height: 40px;
-border-radius: 20px;
-margin: 70px 20px 30px 30px;
-border: hidden;
-float: left;
-color: black;
-border: 2px solid yellowgreen;
-background-color: rgb(223, 88, 10);
+        display: block;
+      }
+      .container-2 h2 {
+        color: rgb(223, 17, 17);
+        text-align: center;
+        /* text-shadow: 2px 2px 2px 2px orange; */
+        padding: 30px 0 20px 0;
+      }
 
-/* background-image: linear-gradient(green,orange); */
-       }
-       .container-2 .forget{
-           margin-top: 75px;
-           margin-bottom: 20px;
-            display: block;
-width: 50%;
-float: right;
+      .container-2 .social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50;
+      }
 
-        }
-       .container-2 .forget a{
-            text-decoration: none;
-            padding: 10px;
-           
-            color: rgb(235, 10, 10);
-           
+      .container-2 label {
+        display: block;
+        margin-left: 40px;
+      }
+      .container-2 .field {
+        display: block;
+        width: 80%;
+        margin: 30px auto;
+        border: hidden;
+        height: 40px;
+        border-bottom: 2px solid rgba(10, 10, 10, 0.5);
+        background-color: white;
+      }
 
-        }
-        .container-2 input[type="submit"]:hover{
-            background-image: linear-gradient(green,orange);
-            box-shadow: 0 0 10px 3px rgb(90, 85, 85);
-            color:white;
-        }
-        .social i{
-margin-right: 20px;
-color: rgb(235, 24, 8);
-font-size: 20px;
-       }
-       input[type=submit]:hover{
-           position: relative;
-           top:-8px;
-       }
-        .forget a:hover{
-            opacity: 0.7;
-        }
-.terms a:hover{
-    opacity:0.7;
-}
-      
-        .container-2 .social{
-           width: 100%;
-           height:70px;
-           border-radius: 0 0 30px 30px;
-           background-image: linear-gradient(rgb(32, 32, 31),gray);
-           display: flex;
-           justify-content: center;
-           align-items: center;
-       }
+      .container-2 input[type="submit"] {
+        display: block;
+        /* background-color: rgb(224, 77, 24); */
+        width: 120px;
+        height: 40px;
+        border-radius: 20px;
+        margin: 70px 20px 30px 30px;
+        border: hidden;
+        float: left;
+        color: black;
+        border: 2px solid yellowgreen;
+        background-color: rgb(223, 88, 10);
+
+        /* background-image: linear-gradient(green,orange); */
+      }
+      .container-2 .forget {
+        margin-top: 75px;
+        margin-bottom: 20px;
+        display: block;
+        width: 50%;
+        float: right;
+      }
+      .container-2 .forget a {
+        text-decoration: none;
+        padding: 10px;
+
+        color: rgb(235, 10, 10);
+      }
+      .container-2 input[type="submit"]:hover {
+        background-image: linear-gradient(green, orange);
+        box-shadow: 0 0 10px 3px rgb(90, 85, 85);
+        color: white;
+      }
+      .social i {
+        margin-right: 20px;
+        color: rgb(235, 24, 8);
+        font-size: 20px;
+      }
+      input[type="submit"]:hover {
+        position: relative;
+        top: -8px;
+      }
+      .forget a:hover {
+        opacity: 0.7;
+      }
+      .terms a:hover {
+        opacity: 0.7;
+      }
+
+      .container-2 .social {
+        width: 100%;
+        height: 70px;
+        border-radius: 0 0 30px 30px;
+        background-image: linear-gradient(rgb(32, 32, 31), gray);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     </style>
-    
-</head>
-<body>
+  </head>
+  <body>
     <main class="container-2">
-        <img src="../../semester-5/images/avatar1.png" alt="">
-        <!-- <h2 style="text-align: center; padding: 20px 0 20px 0;">Sign up</h2> -->
+      <img src="../../semester-5/images/avatar1.png" alt="" />
+      <!-- <h2 style="text-align: center; padding: 20px 0 20px 0;">Sign up</h2> -->
 
-   
-        <input type="text" placeholder="Email" class="field">
- 
-   
-        <input type="password" placeholder="Password" class="field">
-    
-    <label for="" >
-        <input type="checkbox" > <span style="padding-left: 20px;opacity: 0.6;">Accept the</span> <span class="terms"><a href="#">Terms and Conditions </a></span>
-    </label>
-    <input type="submit" value="Sign in">
-    <div class="forget"><span style="opacity: 0.7;">Haven't account?</span><a href="signup.html">Sign up</a></div>
-  
-   
-    <section class="social">
-        <span ><i class="fa fa-facebook"></i></span>
+      <input type="text" placeholder="Email" class="field" />
+
+      <input type="password" placeholder="Password" class="field" />
+
+      <label for="">
+        <input type="checkbox" />
+        <span style="padding-left: 20px; opacity: 0.6">Accept the</span>
+        <span class="terms"><a href="#">Terms and Conditions </a></span>
+      </label>
+      <input type="submit" value="Sign in" />
+      <div class="forget">
+        <span style="opacity: 0.7">Haven't account?</span
+        ><a href="signup.html">Sign up</a>
+      </div>
+
+      <section class="social">
+        <span><i class="fa fa-facebook"></i></span>
         <span><i class="fa fa-twitter"></i></span>
-        <span ><i class="fa fa-google-plus"></i></span>
-    </section>
-</main>
+        <span><i class="fa fa-google-plus"></i></span>
+      </section>
+    </main>
 
-    <script>  
-        function validation()  
-        {  
-            var name=document.f1.name.value;  
-            var ps=document.f1.password.value;  
-            var email=document.f1.email.value;
-            if(name.length=="" && ps.length=="" && email.length=="") {  
-                alert("User Name, Password, Email fields are empty");  
-                return false;  
-            }  
-            else  
-            {  
-                if(name.length=="") {  
-                    alert("User Name is empty");  
-                    return false;  
-                }   
-                if (ps.length=="") {  
-                alert("Password field is empty");  
-                return false;  
-                }  
-                if (email.length=="") {  
-                alert("email field is empty");  
-                return false;  
-                }  
-            }                             
-        }  
-    </script>  
-</body>
+    <script>
+      function validation() {
+        var name = document.f1.name.value;
+        var ps = document.f1.password.value;
+        var email = document.f1.email.value;
+        if (name.length == "" && ps.length == "" && email.length == "") {
+          alert("User Name, Password, Email fields are empty");
+          return false;
+        } else {
+          if (name.length == "") {
+            alert("User Name is empty");
+            return false;
+          }
+          if (ps.length == "") {
+            alert("Password field is empty");
+            return false;
+          }
+          if (email.length == "") {
+            alert("email field is empty");
+            return false;
+          }
+        }
+      }
+    </script>
+  </body>
 </html>

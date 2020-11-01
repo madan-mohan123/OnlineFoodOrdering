@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&family=Ubuntu:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+fieldset {
+  padding: 20px;
+  width: 900px;
+  margin: 10px auto 10px auto;
+}
+.text-adder input[type="text"] {
+  border: 1px solid #39cccc;
+  width: 75%;
+  -moz-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+  box-shadow: inner 0 0 4px rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  transition: ease-in-out, width 0.35s ease-in-out;
+}
+.text-adder input[type="text"]:focus {
+  width: 90%;
+  outline: none !important;
+  border-color: #719ece;
+  box-shadow: 0 0 10px #719ece;
+}
+.Address {
+  display: block;
+  line-height: 25px;
+  padding: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  margin: 0px 10px 0px 10px;
+}
+.text-adder h3 {
+  margin: 10px 10px 5px 10px;
+  padding: 2px;
+}
+.NumberField {
+  display: block;
+  line-height: 25px;
+  padding: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  margin: 0px 10px 0px 10px;
+}
+.pin-num input[type="text"] {
+  width: 200px;
+}
+.pin-num input[type="text"]:focus {
+  width: 300px;
+}
+.submit {
+  padding-left: 50px;
+  padding-top: 30px;
+}
+.submit input[type="submit"] {
+  width: 140px;
+  height: 45px;
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+.submit input[type="reset"] {
+  width: 140px;
+  height: 45px;
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+.submit input[type="submit"]:hover {
+  background-color: #2ee59d;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+.submit input[type="reset"]:hover {
+  background-color: #2ee59d;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-5px);
+}
+.submit input[type="submit"]:focus {
+  outline: none;
+}
+.submit input[type="reset"]:focus {
+  outline: none;
+}

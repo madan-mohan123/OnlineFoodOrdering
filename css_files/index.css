@@ -482,6 +482,7 @@ margin-right: 90px;
 }
 .section-3 .how img{
 border-radius: 50%;
+transition: 0.5s;
 }
 .section-3 .how img:hover{
 transform: scale(1.3);

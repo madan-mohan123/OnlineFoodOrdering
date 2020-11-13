@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  
     <link rel="stylesheet" href="../OnlineFoodOrdering/css_files/index.css">
     <title>Hot Food</title>
     <style>
@@ -13,6 +15,18 @@
     background-attachment: fixed;
     background-size: cover;
         }
+
+   
+          .fa-tasks,.fa-home,.fa-tasks{
+        margin-right: 15px;
+       font-size: 20px;
+       
+    }
+    .fa-search{
+        margin-right: 10px;
+       font-size: 20px;  
+    }
+  
        
     </style>
    
@@ -24,8 +38,8 @@
             <p><b>Order <span style="color: rgb(9, 223, 238); opacity: 0.7;font-size:30px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> Food Now</span></b></p>
            <nav>
             <ul>
-                <li><a href="#" class="bar">B</a></li>
-                <li><a href="#">home</a></li>
+                <!-- <li><a href="#" class="bar">B</a></li> -->
+                <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>home</a></li>
                 
                 <li>
                     <a href="#">Restaurants</a>
@@ -49,21 +63,13 @@
                             <li><a href="#" onclick="complaint()">Favorite Food</a></li>
                             <li><a href="#">Details</a></li>
                         </ul>
-                        <ul style="display: inline-block;">
-                            <li><a href="#bill">Billing</a></li>
-                            <li><a href="#" onclick="dashboard()">K.K</a></li>
-                            <li><a href="#" onclick="tenant()">Jai Guru Dev</a></li>
-                            <li><a href="#" onclick="profile()">Krisha</a></li>
-                            <li><a href="Owner.html">Karan</a></li>
-                            <li><a href="#" onclick="complaint()">3D</a></li>
-                            <li><a href="#">Details</a></li>
-                        </ul>
+                      
                     </div>
                     </li>
-                    <li><a href="html/signup.html">Join</a></li>
+                    <li><a href="html/signup.html"><i class="fa fa-tasks" aria-hidden="true"></i>Join</a></li>
 
                 </li>
-                <li><a href="#" class="cbar">C</a></li> 
+                
               
             </ul>
            </nav>
@@ -73,7 +79,8 @@
             <p> ORDER TAKE AWAY ONLINE</p>
             <h2 style="color: white;text-align: center;">FROM YOUR FAVORITE RESTAURENT</h2>
         </div>
-            <a href="html/Search.html">Menu</a>
+        <!-- <span class="search"><a href=""><i class="fa fa-search" aria-hidden="true"></i>Search</a></span> -->
+         <a href="html/Search.php"><i class="fa fa-search" aria-hidden="true"></i>Search</a>
             <div class="icon">
             <i class="fa fa-clock-o" aria-hidden="true"> 24/7 Delivery</i>
             <i class="fa fa-cutlery" aria-hidden="true"> 100 Restaurants</i>
@@ -88,23 +95,23 @@
 <div class="cards">
     <img src="images/burger.jpg" alt="">
     <h2 style="text-align: center;">Burger</h2>
-    <h3 style="text-align: center;color: gray;opacity: 0.8;margin-top: 20px;">Choose your burger</h3>
+    <h3 style="text-align: center;color: gray;opacity: 0.8;margin-top: 20px;">Taj Hotel</h3>
   
 </div>
 <div class="cards">
     <img src="images/pizza.jpg" alt="">
     <h2 style="text-align: center;">Pizza</h2>
-    <h3 style="text-align: center;color: gray;opacity: 0.8;margin-top: 20px;">Choose your Pizza</h3>
+    <h3 style="text-align: center;color: gray;opacity: 0.8;margin-top: 20px;">Centrum</h3>
 </div>
 <div class="cards">
     <img src="images/f2.jpg" alt="">
     <h2 style="text-align: center;">Dosa</h2>
-    <h3 style="text-align: center;color: gray;opacity: 0.8;margin-top: 20px;">Choose your Dosa</h3>
+    <h3 style="text-align: center;color: gray;opacity: 0.8;margin-top: 20px;">Abhinandan</h3>
 </div>
 <div class="cards">
     <img src="images/f1.jpg" alt="">
     <h2 style="text-align: center;">Itali</h2>
-    <h3 style="text-align: center;color: gray;opacity: 0.8;margin-top: 20px;">Choose your Itali</h3>
+    <h3 style="text-align: center;color: gray;opacity: 0.8;margin-top: 20px;">Baba Ka Dhaba</h3>
 </div>
 <!-- <h2 style="margin-top: 70px;margin-left: 30%; display: inline-block; text-align: center; opacity: 0.7;">Much more your favorite food</h2> -->
 <a href="html/Search.html">More category</a>
@@ -218,7 +225,7 @@
 
     <div class="mySlides fade">
   
-      <img src="../semester-5/images/avatar1.png" >
+      <img src="images/avatar1.png" >
       <div class="text"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae minus repellat cumque fuga id! Ipsum dignissimos fuga praesentium doloremque eaque illum nisi, aliquam tenetur eligendi. Quas incidunt nostrum at neque.
 
       </p>
@@ -227,7 +234,7 @@
   
     <div class="mySlides fade">
     
-      <img src="../semester-5/images/avatar2.png" >
+      <img src="images/avatar2.png" >
      <div class="text"><p>Lorem ipsum, djksjlkjljas Beatae minus repellat cumque fuga id! Ipsum dignissimos fuga praesentium doloremque eaque illum nisi, aliquam tenetur eligendi. Quas incidunt nostrum at neque.
    </p>
     </div>
@@ -235,7 +242,7 @@
   
     <div class="mySlides fade">
      
-      <img src="../semester-5/images/avatar3.png" >
+      <img src="images/avatar3.png" >
       <div class="text"><p>Lorem ipsumcnknkdjlksc pisicing elit. Beatae minus repellat cumque fuga id! Ipsum dignissimos fuga praesentium doloremque eaque illum nisi, aliquam tenetur eligendi. Quas incidunt nostrum at neque.
     </p>
 </div>

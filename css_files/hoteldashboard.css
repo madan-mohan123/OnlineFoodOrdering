@@ -1,0 +1,405 @@
+body{
+    background-image: url(../images/pro2.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+    }
+  
+  
+    *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  
+  header{
+  
+  /* background-color:rgba(53, 3, 68,0.9); */
+  background-image: linear-gradient(45deg,red,orange,teal);
+  height: 80px;
+  padding: 0 20px;
+  width: 100%;
+  
+  
+  
+  }
+  .cbar,.bar{
+    display: none;
+  }
+  
+  nav{
+  float: right;
+  }
+  nav ul li{
+  list-style: none;
+  display: inline-block;
+  line-height: 80px;
+  }
+  nav ul li a{
+  
+  text-decoration: none;
+  font-size: 17px;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  transition: 0.6s;
+  }
+  nav a:hover{
+  background-color: rgb(57, 50, 68);
+  
+  color:rgb(206, 204, 209);
+  
+  
+  }
+  
+  
+  header img{
+  border-radius: 20px 0 20px 0;
+  width:120px;
+  height:70px;
+  padding-top: 5px;
+  float:left;
+  
+  position: relative;
+  left: 0;
+  z-index: 1;  
+  }
+  header p{
+  
+  display: inline-block;
+  line-height: 80px;
+  margin-left: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  color:rgb(209, 209, 200);
+  }
+  @media (max-width: 500px){
+  header p{
+    display: none;
+  }
+  }
+  section.menu{
+      width: 100%;
+      height: 40px;
+      margin: 20px 0;
+      /* background-color: blueviolet; */
+      background-image: linear-gradient(rgb(19, 20, 20),rgb(59, 59, 59));
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  section.menu p{
+      background-color:blueviolet;
+      padding: 6px;
+      color: white;
+      font-size: 15px;
+      border-radius: 15px;
+      margin: 0 20px 0 20px;
+      transition: 0.6s;
+  }
+  section.menu p:hover{
+  background-color: gray;
+  box-shadow: 0 0 5px 5px teal;
+  transform: scale(1.2);
+  }
+  
+  
+  
+  .menucard table {
+          width: 80%;
+          margin: 30px auto;
+  
+          background-image: linear-gradient(orangered,black);
+          opacity: 0.8;
+  
+          border-radius: 20px;
+        }
+  
+        .menucard table th {
+          border-bottom: 2px solid rgb(26, 24, 24);
+          font-size: 20px;
+          padding: 10px;
+          color: rgb(69, 6, 128);
+         
+        }
+        .menucard table,tr,
+        td,
+        th {
+          border-collapse: collapse;
+  
+          transition: 0.5s;
+        }
+        .menucard table td {
+          text-align: center;
+          color: white;
+          padding: 5px;
+        }
+        .menucard table tr:hover:nth-child(n+2) {
+          background-color: rgb(82, 80, 79);
+          border-radius: 20px;
+        }
+        .menucard table tr td img {
+          width: 100px;
+          height: 50px;
+          border-radius: 10px;
+        }
+        .menucard table tr td:nth-child(1) {
+          width: 50px;
+        }
+        .menucard table tr td img:hover {
+          transform: scale(1.3);
+        }
+        #hotelmenu table tr td img:hover {
+          transform: scale(1.2);
+          opacity: 0.9;
+        }
+        .cooks{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 150px;
+            /* background-color: red; */
+            margin: 30px 0 40px 0;
+  
+        }
+        .cooks img{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 50px 0 50px;
+            box-shadow: 0 0 10px 10px orange;
+        }
+        .footer{
+  
+  width: 100%;
+  /* background-color: #2f3640; */
+  /* background-color:rgb(255, 102, 0); */
+  padding:40px 20px;
+  background-image: linear-gradient(black,gray);
+  
+  }
+  
+  
+  
+  .mycontent{
+  width: 100%;
+  height: 220px;
+  border-bottom:2px solid rgba(255,255,255,0.1);
+  }
+  .mycontent .about{
+  float: left;
+  height: 200px;
+  width: 30%;
+  margin-right: 50px;
+  overflow: hidden;
+  }
+  .mycontent  .about h2{
+  color:white;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  
+  }
+  .mycontent .about p{
+  color:white;
+  opacity:0.5;
+  text-align: justify;
+  }
+  .mycontent .link{
+  float: right;
+  width: 20%;
+  height: 200px;
+  }
+  .mycontent .link p{
+  color:white;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  }
+  .mycontent .link ul{
+  list-style: none;
+  }
+  .mycontent .link ul li{
+  margin: 5px;
+  }
+  .mycontent .link ul li a{
+  color: white; 
+  text-decoration: none;
+  opacity:0.5;
+  
+  }
+  .mycontent::after{
+  content: '';
+  clear: both;
+  display: block;
+  }
+  
+  .social{
+  width: 100%;
+  border-top:2px solid rgba(255,255,255,0.1);
+  margin-top:50px;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .social i{
+  color: white;
+  font-size: 20px;
+  }
+  .social .face{
+  margin:20px;
+  padding:15px;
+  border-radius: 100%;
+  background-color: rgb(106, 106, 206);
+  }
+  .social .insta{
+  margin:20px;
+  padding:15px;
+  border-radius: 100%;
+  background-color: purple;
+  }
+  .social .twit{
+  margin:20px;
+  padding:15px;
+  border-radius: 100%;
+  background-color: skyblue;
+  
+  }
+  .social .linked{
+  margin:20px;
+  padding:15px;
+  border-radius: 100%;
+  background-color: blueviolet;
+  }
+  .social .gmail{
+  margin:20px;
+  padding:15px;
+  border-radius: 100%;
+  background-color: red;
+  }
+  
+  .social .insta:hover,.face:hover,.gmail:hover,.twit:hover,.linked:hover{
+  background-color:rgb(219, 186, 0)
+  }
+  .last{
+    color:whitesmoke;
+  display: block;
+  width: 180px;
+  margin: 0 auto;
+  margin-top: 20px;
+  opacity: 0.5;
+  }
+  
+  nav ul li:hover .menu1{
+  display: block;
+  
+  }
+  .menu1{
+  padding: 20px;
+  position:absolute;
+  right: 10px;
+  top:80px;
+  width: 200px;
+  z-index: 6;
+  display: none;
+  background-image: linear-gradient(rgb(19, 20, 20),rgb(59, 59, 59));
+  }
+  
+  .menu1 ul li{
+  display: block;
+  
+  height: 40px;
+  line-height: 40px;
+  
+  
+  
+  }
+  .menu1 ul li a{  
+  
+  font-size: 15px;
+  color: white;
+  padding: 7px 20px;
+  /* border-radius: 0px; */
+  transition: 0.5s; 
+  margin: 7px;   
+  }
+  .menu1 ul li a:hover{    
+  
+  color: white;
+  background-color: rgb(95, 90, 95);
+  border-left: 4px solid white;
+  
+  /* opacity: 0.8; */
+  
+  }
+  
+  
+  .slideshow-container {
+  /* max-width: 1000px; */
+  position: relative;
+  /* margin: auto; */
+  /* padding: 30px 0; */
+  border-radius: 10px;
+  
+  background-color: none;
+  color: white;
+  }
+  
+  .mySlides img{
+  width: 100%;
+  height:600px;
+  
+  border-radius: 20px;
+  display: inline-block;
+  box-shadow: 0 0 10px 10px rgb(218, 85, 32);
+  }
+  
+  .mySlides {
+  display: none;
+  /* padding-left: 40px; */
+  transition: 0.5s;
+  }
+  .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: black;
+  }
+  
+  
+  .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  }
+  
+  
+  .prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  }
+  .fade h2{
+    position: absolute;
+    top:200px;
+    left:20%;
+    right: 20%;
+    text-shadow: 0 0 20px 20px teal;
+    font-size: 70px;
+    transition: 2.5s;
+  }
+  .fade h2:hover{
+    text-shadow: 0 0 20px 20px rgb(218, 120, 9);
+    transform: scale(0.8);
+  
+  }

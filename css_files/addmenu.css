@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../images/blak.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; */
+}
+#delfood{
+   /* display: none; */
+    width: 400px;
+    height: 400px;
+    background-color: rgb(49, 49, 49);
+    counter-reset: white;
+    margin: 100px auto;
+    
+}
+#delfood label{
+    display: block;
+    margin: 20px 0 20px 20px;
+    width: 360px;
+    /* border: 2px solid green; */
+font-size: 20px;
+color: white;
+font-family: sans-serif;
+
+
+}
+#delfood input{
+    display: block;
+    height: 40px;
+    width: 360px;
+    margin: 20px 0 20px 20px;
+    font-size: 20px;
+}
+#delfood img{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 10px auto;
+}
+input[type="submit"]{
+    background-color: orangered;
+    border:none;
+    transition: 0.7s;
+}
+input[type="submit"]:hover{
+    transform: scale(0.9);
+}

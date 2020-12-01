@@ -35,6 +35,11 @@ $i++;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="../css_files/bootstrap.min.css"> -->
+
     <title>Hotel DashBoard</title>
     <link rel="stylesheet" href="../css_files/hoteldashboard.css">
     <style>
@@ -108,6 +113,18 @@ font-family: sans-serif;
 #delfood input[type="submit"]:hover{
     transform: scale(0.9);
 }
+.fa-sign-out,.fa-home,.fa-grav{
+        margin-right: 15px;
+       font-size: 20px;
+       
+    }
+    a .fa-times{
+      margin-left:10px;
+      font-size:20px;
+      color:white;
+      margin-bottom:10px;
+display:block;
+    }
 
 </style> 
 </head>
@@ -119,14 +136,14 @@ font-family: sans-serif;
            <nav>
             <ul>
                 <li><a href="#" class="bar">B</a></li>
-                <li><a href="#">home</a></li>
+                <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>home</a></li>
 
                      
                 <li>
-                    <a href="../php/logout.php">LogOut</a>
+                    <a href="../php/logout.php"><i class="fa fa-sign-out" aria-hidden="true"></i>LogOut</a>
    
                     </li>
-                    <li><a href="review.php">More</a>
+                    <li><a href="review.php"><i class="fa fa-grav" aria-hidden="true"></i>More</a>
                        
                     </li>
 
@@ -227,11 +244,11 @@ for($j=0 ;$j<$i ; $j++){
         <p style="text-align: center; font-size: 80px; color: blue;margin: 40px 0 30px 0;text-shadow: 0 0 10px 10px teal;">Best Cooks of The Hotel</p>
        
         <section class="cooks">
-            <img src="../images/avatar3.png" alt="">
-            <img src="../images/avatar4.jpg" alt="">
-            <img src="../images/avatar5.png" alt="">
-            <img src="../images/avatar3.png" alt="">
-            <img src="../images/avatar4.jpg" alt="">
+            <img src="../images/cook1.jpg" alt="">
+            <img src="../images/cook2.jpg" alt="">
+            <img src="../images/cook3.jpg" alt="">
+            <img src="../images/cook4.jpg" alt="">
+            <img src="../images/cook5.jpg" alt="">
         </section>
 
 
@@ -283,9 +300,10 @@ for($j=0 ;$j<$i ; $j++){
         </div>
 
         <section class="addmenu" id="addmenu">
-<i>cancel</i>
+        <a style="display:block;" onclick="close2()"><i class="fa fa-times"></i></a>
 
 <form action="../php/addmenu.php" method="POST" enctype="multipart/form-data">
+<h3 style="text-align:center; color:gray;">Add Food Items</h3>
 
 
 <label for="">Food Name</label>
@@ -311,13 +329,14 @@ for($j=0 ;$j<$i ; $j++){
 <!-- deletefood  -->
 
 <div id="delfood">
+<a style="display:block;" onclick="close1()"><i class="fa fa-times"></i></a>
         <img src="../images/logo.png" alt="">
         <h2 style="text-align: center;color:orangered;">Get Your Food</h2>
         <form action="../php/delfood.php" method="POST">
         
         <label for="">Food Name</label>
         
-        <input type="text" name="foodname" >
+        <input type="text" name="foodname" required>
 
         <?php
 echo '<input type="text" name="hotelid" style="display:none;"  value="';echo $myhotelid ;echo '">';
@@ -330,5 +349,16 @@ echo '<input type="text" name="hotelid" style="display:none;"  value="';echo $my
 
                <script src="../javascript/hoteldashslider.js"></script>
                 <script src="../javascript/hoteldashboard.js"></script>
+                <script>
+                   function close2(){
+                    document.getElementById("addmenu").style.top="-600px";
+                    document.getElementById("blur").style.opacity="1";
+         
+         }
+         function close1(){
+                    document.getElementById("delfood").style.top="-500px";
+                    document.getElementById("blur").style.opacity="1";
+         }
+                </script>
 </body>
 </html>

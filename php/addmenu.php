@@ -30,14 +30,16 @@ session_start();
           move_uploaded_file($tempname, $folder);
 
 
-          if($hid!="" && $name!="" && $cost!="" && $quantity!="" $filename!=""){
+          if($hid!="" && $name!="" && $cost!="" && $quantity!="" && $filename!=""){
+          
             $check=1;
           }
+       
   }
-
+echo '<h1>';echo "hi";echo '</h1>';
 if($check==1){
     $sql = "INSERT INTO hotelmenu(HOTEL_ID,COST,FOOD_NAME,PIC,QUANTITY) VALUES ('$hid','$cost','$name','$filename','$quantity')"; 
-
+  
  if($con->query($sql) === TRUE){            
 
    header("Location: ../html/hoteldashboard.php");
@@ -46,6 +48,7 @@ if($check==1){
 }
 else
 {
+  // echo '<h1>';echo "under5";echo '</h1>';
 echo " sorry". "<br>". $sql ."<br>" 
 . $con->error;
 }

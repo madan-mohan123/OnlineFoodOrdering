@@ -14,6 +14,7 @@
     <title>Signup</title>
     
   </head>
+ 
   <body>
     <div class="container">
 <div class="arti">
@@ -22,19 +23,39 @@
     <h2 style="color: blueviolet;">Enjoy Best food orders from here with Fast Delivery!</h2>
     </div>
     <main class="container-2">
-      <img src="../images/avatar1.png" alt="" />
-      <!-- <h2 style="text-align: center; padding: 20px 0 20px 0;">Sign up</h2> -->
+      <img src="../images/log1.png" alt="" />
+
 <form action="../php/signup.php" method="POST">
-      <input type="text" placeholder="hotel name" name="username" class="field" required/>
-      <input type="text" placeholder="Email" name="email" class="field" required/>
-
-      <input type="password" placeholder="Password" name="pass" class="field" required/>
-
+  <div class="form-control ">
+      <input type="text" placeholder="Enter Hotel Name" name="username"  id="name" oninput="checkInputsName()" required/>
+      <i style="margin-left: -23px;" class="fa fa-check icon"></i>
+      <i style="margin-left: -23px;" class="fa fa-certificate ricon" aria-hidden="true"></i>
+      <div class="msg" style="margin-top: 5px;"></div>
+</div>
+<div class="form-control ">
+      <input type="text" placeholder="Enter Email" name="email" id="email"  oninput="checkInputsEmail()" required/>
+      <i style="margin-left: -23px;" class="fa fa-check icon"></i>
+      <i style="margin-left: -23px;" class="fa fa-certificate ricon" aria-hidden="true"></i>
+      <div class="msg" style="margin-top: 5px;"></div>
+</div>
+<div class="form-control ">
+      <input type="password" placeholder="Enter Password" name="pass" id="pass"  oninput="checkInputsPass()" required/>
+      <i style="margin-left: -23px;" class="fa fa-check icon"></i>
+      <i style="margin-left: -23px;" class="fa fa-certificate ricon" aria-hidden="true"></i>
+      <div class="msg" style="margin-top: 5px;"></div>
+    </div>
+    <div class="form-control ">
+      <input type="password" placeholder="Enter Re-Password" name="repass" id="repass" oninput="checkInputsRepass()" required/>
+      <i style="margin-left: -23px;" class="fa fa-check icon"></i>
+      <i style="margin-left: -23px;" class="fa fa-certificate ricon" aria-hidden="true"></i>
+      <div class="msg" style="margin-top: 5px;"></div>
+    </div>
       <label for="">
         <input type="checkbox" required>
         <span style="padding-left: 20px; opacity: 0.6">Accept the</span>
         <span class="terms"><a href="#">Terms and Conditions </a></span>
       </label>
+
       <input type="submit" value="Sign up" />
       <div class="forget">
         <span style="opacity: 0.7">Have an account?</span
@@ -49,29 +70,8 @@
     </main>
     </div>
 
-    <script>
-      function validation() {
-        var name = document.f1.name.value;
-        var ps = document.f1.password.value;
-        var email = document.f1.email.value;
-        if (name.length == "" && ps.length == "" && email.length == "") {
-          alert("User Name, Password, Email fields are empty");
-          return false;
-        } else {
-          if (name.length == "") {
-            alert("User Name is empty");
-            return false;
-          }
-          if (ps.length == "") {
-            alert("Password field is empty");
-            return false;
-          }
-          if (email.length == "") {
-            alert("email field is empty");
-            return false;
-          }
-        }
-      }
+    <script src="../javascript/validate.js" >
+  
     </script>
   </body>
 </html>

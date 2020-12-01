@@ -68,14 +68,21 @@ header p{
     font-size: 20px;
     color:rgb(209, 209, 200);
 }
+
+@media (max-width: 500px){
+    header p{
+      display: none;
+    }
+    }
+
 section.search{
     background-image: linear-gradient(white,blue);
     height: 300px;
     width: 100%;
     padding-top: 50px;
-    /* border: 2px solid black; */
     box-shadow: 0 10px 10px 10px blue;
 }
+
 section.search input{
     width: 500px;
     height:40px;
@@ -87,12 +94,36 @@ border:none;
 padding: 10px;
 
 }
+select {
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    margin: 30px auto;
+    display: block;
+    border-radius: 20px;
+    padding: 10px;
+    color: gray;
+  }
+
+@media (max-width: 600px){
+   
+    section.search input{
+        width: 300px;
+    }
+    select {
+        width: 300px;
+        height: 40px;
+       
+      }
+    }
+
 section.item{
 margin-top: 30px;
 padding: 20px;
+width: 100%;
 }
 section.item .food{
-width: 300px;
+width: 22%;
 height:350px;
 transition: 0.5s;
 
@@ -102,6 +133,7 @@ border-radius: 30px;
 margin: 20px;
 
 }
+
 section.item .food:hover{
 transform: scale(1.1);
 background-color: indigo;
@@ -113,11 +145,69 @@ height: 200px;
 margin-bottom: 20px;
 }
 
+@media (max-width: 600px){
+   
+    section.item .food{
+        width: 250px;
+        height:300px;
+      
+        
+        }
+        section .food img{
+         
+            height: 150px;
+          
+            }
+    }
+
+        @media (max-width: 1160px) and (min-width:830px){
+            section.item .food{
+                width: 200px;
+                height:250px;
+              
+                }
+                section .food img{
+                 
+                    height: 100px;
+                  
+                    }
+        }
+        @media (max-width: 839px) and (min-width:500px){
+            section.item .food{
+                width: 220px;
+                height:270px;
+              
+                }
+                section .food img{
+                 
+                    height: 100px;
+                  
+                    }
+        
+        }
+      
+      
+        @media (max-width: 500px){
+            section.item .food{
+                width: 300px;
+                height:340px;
+              margin: 10px auto;
+              float: initial;
+                }
+                section .food img{
+                 
+                    height: 200px;
+                  
+                    }
+        
+        }
+
+
+
 .footer{
 clear: both;
 width: 100%;
-/* background-color: #2f3640; */
-/* background-color:rgb(255, 102, 0); */
+
 padding:40px 20px;
 margin-top: 50px;
 background-image: linear-gradient(black,gray);

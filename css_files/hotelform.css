@@ -76,7 +76,7 @@ label{
     clear: both;
     display: block;
     width: 90%;
-    margin: 20px 0 10px 40px;
+    margin: 10px 0 10px 40px;
     color: white;
     font-family: sans-serif;
     /* border: 2px solid black; */
@@ -84,7 +84,7 @@ label{
 input{
     width: 90%;
     height: 30px;
-    margin: 0px 0 20px 40px;
+    margin: 0px 0 10px 40px;
 }
 
 input:focus{
@@ -106,12 +106,4 @@ button{
 }
 button:hover{
     box-shadow: 0 0 10px 2px rgb(209, 46, 46);
-}
-
-.tenant-form i{
-display: block;
-margin: 20px;
-margin-top: 10px;
-border: 1px solid rebeccapurple;
-float:right;
 }

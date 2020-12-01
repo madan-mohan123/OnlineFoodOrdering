@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  
+    <link rel="stylesheet" href="../OnlineFoodOrdering/css_files/testindex.css">
+    <title>Hot Food</title>
+    <style>
+        body{
+        background-image: url(images/pro2.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+        }
+
+   
+          .fa-tasks,.fa-home,.fa-tasks,.fa-h-square{
+        margin-right: 15px;
+       font-size: 20px;
+       
+    }
+    .fa-search{
+        margin-right: 10px;
+       font-size: 20px;  
+    }
+    .section-1 a{
+  position: absolute;
+  width: 200px;
+  text-align: center;
+  height: 40px;
+top:7%;
+left:7%;
+display: block;
+line-height: 40px;
+border-radius: 30px;
+background-color: rgb(226, 150, 8);
+color: white;
+font-size: 15px;
+text-decoration: none;
+border: 2px solid rgb(211, 24, 24);   
+}
+.fa-bars{
+display: none;
+margin-right: 10px;
+       font-size: 20px;  
+       color: gray;
+    }
+    .fa-times{
+        display: none;
+        
+        list-style: none;
+        margin-right: 10px;
+       font-size: 25px;  
+       color: gray;
+       float: right;  
+       margin-top: 10px;
+    }
+    @media (max-width:1100px){
+    nav{
+            position: fixed;
+            /* top:0px; */
+            top: -200px;
+            right:-200px;
+            z-index: 8;
+            width: 200px;
+            height: 250px;
+            background-image: linear-gradient(rgb(100, 198, 228),rgb(126, 126, 223));
+            transition: 1s;
+            /* transform: rotate(70deg); */
+        }
+    nav ul li{
+        display: none;
+       line-height: 50px;
+       
+    }
+    .fa-bars{
+        display: block;
+        color: rgb(184, 168, 168);
+        font-size: 30px;
+        margin-top: 20px;
+    float: right;
+    margin-right: 30px;
+   
+    }
+  
+
+}
+  
+       
+    </style>
+   
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/logo.png"  alt="">
+          
+            <p><b>Order <span style="color: rgb(9, 223, 238); opacity: 0.7;font-size:30px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> Food Now</span></b></p>
+            <i class="fa fa-bars" aria-hidden="true" onclick="sidebar()"></i>
+            <nav>
+            <i class="fa fa-times" aria-hidden="true" onclick="closesidebar()"></i>
+            <ul>
+               
+                <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>home</a></li>
+                
+                <li>
+                    <a href="html/Search.php"><i class="fa fa-h-square" aria-hidden="true"></i>Restaurants</a>
+                   
+                    </li>
+                    <li><a href="html/signup.html"><i class="fa fa-tasks" aria-hidden="true"></i>Join</a></li>
+
+                </li>
+                
+              
+            </ul>
+           </nav>
+        </header>
+        <section class="section-1">
+           <div class="heading">
+            <p> ORDER TAKE AWAY ONLINE</p>
+            <h2 style="color: white;text-align: center;">FROM YOUR FAVORITE RESTAURENT</h2>
+        </div>
+       
+         <a href="html/Search.php"><i class="fa fa-search" aria-hidden="true"></i>Search</a>
+            <div class="icon">
+            <i class="fa fa-clock-o" aria-hidden="true"> 24/7 Delivery</i>
+            <i class="fa fa-cutlery" aria-hidden="true"> 100 Restaurants</i>
+           <i class="fa fa-mobile" aria-hidden="true"> Fast Delivery</i>
+           <i class="fa fa-location-arrow" aria-hidden="true"> Fresh Food</i>
+        </div>
+           
+        </section>
+        <section class="section-2">
+<p>MORE THAN <span style="color:orange">500+ DISHES</span>  TO ORDER</p>
+<h2 style="text-align: center;color: white;opacity: 0.8;margin-bottom: 40px;"> Welcome to the best online ordering services</h2>
+<div class="cards">
+    <img src="images/burger.jpg" alt="">
+    <h2 style="text-align: center;">Burger</h2>
+    <h3 style="text-align: center;color: gray;opacity: 0.8;margin-top: 20px;">Taj Hotel</h3>
+  
+</div>
+<div class="cards">
+    <img src="images/pizza.jpg" alt="">
+    <h2 style="text-align: center;">Pizza</h2>
+    <h3 style="text-align: center;color: gray;opacity: 0.8;margin-top: 20px;">Centrum</h3>
+</div>
+<div class="cards">
+    <img src="images/f2.jpg" alt="">
+    <h2 style="text-align: center;">Dosa</h2>
+    <h3 style="text-align: center;color: gray;opacity: 0.8;margin-top: 20px;">Abhinandan</h3>
+</div>
+<div class="cards">
+    <img src="images/f1.jpg" alt="">
+    <h2 style="text-align: center;">Itali</h2>
+    <h3 style="text-align: center;color: gray;opacity: 0.8;margin-top: 20px;">Baba Ka Dhaba</h3>
+</div>
+<!-- <h2 style="margin-top: 70px;margin-left: 30%; display: inline-block; text-align: center; opacity: 0.7;">Much more your favorite food</h2> -->
+<a href="html/Search.html">More category</a>
+        </section>
+
+         <section class="section-3">
+<p>HOW TO ORDER ?</p>
+<h3 style="text-align: center;opacity: 0.9;color: gray;margin: 20px 0 40px 0;">Follow the steps</h3>
+<div class="mhow">
+<div class="how">
+<img src="images/loc.png" width="200px" height="200px" alt="">
+<figcaption>Choose Location</figcaption>
+</div>
+<div class="how">
+    <img src="images/restaurant.jpg" width="200px" height="200px" alt="">
+    <figcaption>Choose Restaurants</figcaption>
+    </div>
+    <div class="how">
+        <img src="images/order.png" width="200px" height="200px" alt="">
+        <figcaption>Choose Order</figcaption>
+        </div>
+        <div class="how">
+            <img src="images/food.png" width="200px" height="200px" alt="">
+            <figcaption>Choose Food</figcaption>
+            </div>
+</div>
+        </section>
+
+
+        <section class="section-4">
+<p>Get Your Food with App</p>
+<div class="mhow">
+    <i class="fa fa-google" aria-hidden="true"> Google</i>
+<i class="fa fa-rocket" aria-hidden="true"> App Store</i>
+
+        </div>
+        <img src="images/mob.png" alt="">
+        
+        </section> 
+
+       <section class="section-5">
+           <p>WHAT'S POPULAR</p>
+           <h2 style="text-align: center;opacity: 0.9;color: gray;margin-bottom: 40px;">Client's favorite</h2>
+           <div class="cards1">
+            <img src="images/f2.jpg" alt="">
+           
+            <h2 style="text-align: center;">Burger</h2>
+            <h3 style="text-align: center;color: gray;opacity: 0.8;margin: 20px 0;">Choose your burger</h3>
+            <p> Order Now </p>
+        </div>
+      
+        <div class="cards1">
+            <img src="images/f1.jpg" alt="">
+            <h2 style="text-align: center;">Pizza</h2>
+            <h3 style="text-align: center;color: gray;opacity: 0.8;margin: 20px 0;">Choose your pizza</h3>
+            <p> Order Now </p>
+        </div>
+        <div class="cards1">
+            <img src="images/f2.jpg" alt="">
+            <h2 style="text-align: center;">Dal Makhni</h2>
+            <h3 style="text-align: center;color: gray;opacity: 0.8;margin: 20px 0;">Choose your Daal makhni</h3>
+            <p> Order Now </p>
+        </div>
+        <div class="cards1">
+            <img src="images/manc.jpg" alt="">
+            <h2 style="text-align: center;">Manchoorian</h2>
+            <h3 style="text-align: center;color: gray;opacity: 0.8;margin: 20px 0;">Choose your Manchoorian</h3>
+            <p> Order Now </p>
+        </div>
+       </section> 
+       <section class="section-6">
+           <h1 style="text-align: center;padding: 50px 0 30px 0;font-size: 50px;">Hot Deal</h1>
+           <article class="deal">
+
+           <img src="images/r2.jpg" alt="">
+           <article class="circle">
+           <article class="circle1"><span style="color: rgb(230, 9, 64); margin-right: 10px;"><b> Days</b> </span>122</article>
+           <article class="circle2"><span style="color: rgb(230, 9, 64);margin-right: 10px;"><b> Hours</b> </span>12</article>
+           <article class="circle3"><span style="color: rgb(230, 9, 64);margin-right: 10px;"><b> Minutes</b> </span> 6</article>
+           <article class="circle4"><span style="color: rgb(230, 9, 64);margin-right: 10px;"><b> Seconds</b> </span> 78</article>
+           </article>
+           <!-- <h2 style="text-align: center;color: rgb(126, 119, 119);margin: 50px 0 20px 0;">More Details</h2> -->
+           <a href="#">Click Here</a>
+           </article>
+           
+       </section>
+       <section class="section-7">
+        <p>New Dishes</p>
+        <h2 style="text-align: center;opacity: 0.9;color: gray;margin-bottom: 40px;">Get Order Now</h2>
+        <div class="cards1">
+         <img src="images/f2.jpg" alt="">
+         <h2 style="text-align: center;">Burger</h2>
+         <p>ORDER</p>
+        
+     </div>
+     <div class="cards1">
+         <img src="images/f1.jpg" alt="">
+         <h2 style="text-align: center;">Burger</h2>
+         <p >ORDER</p>
+     </div>
+     <div class="cards1">
+         <img src="images/f2.jpg" alt="">
+         <h2 style="text-align: center;">Burger</h2>
+         <p>ORDER</p>
+     </div>
+     
+       </section>
+<h1 style="text-align: center;margin: 30px;color: white;">Our Best Cook's</h1>
+     
+<section class="slideshow-container">
+
+    <div class="mySlides fade">
+  
+      <img src="images/avatar1.png" >
+      <div class="text"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae minus repellat cumque fuga id! Ipsum dignissimos fuga praesentium doloremque eaque illum nisi, aliquam tenetur eligendi. Quas incidunt nostrum at neque.
+
+      </p>
+    </div>
+    </div>
+  
+    <div class="mySlides fade">
+    
+      <img src="images/avatar2.png" >
+     <div class="text"><p>Lorem ipsum, djksjlkjljas Beatae minus repellat cumque fuga id! Ipsum dignissimos fuga praesentium doloremque eaque illum nisi, aliquam tenetur eligendi. Quas incidunt nostrum at neque.
+   </p>
+    </div>
+    </div>
+  
+    <div class="mySlides fade">
+     
+      <img src="images/avatar3.png" >
+      <div class="text"><p>Lorem ipsumcnknkdjlksc pisicing elit. Beatae minus repellat cumque fuga id! Ipsum dignissimos fuga praesentium doloremque eaque illum nisi, aliquam tenetur eligendi. Quas incidunt nostrum at neque.
+    </p>
+</div>
+    </div>
+  
+  
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</section>
+  <br>
+
+       
+       <div class="footer">
+        <div class="mycontent">
+            <div class="about">
+                <h2>About Us</h2>
+                <p>Our caompany is IT company in global market.It provide you best Picture choosen by Author different countries.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolore rem ducimus, id nam totam dicta iusto! Possimus 
+                    soluta ad qui praesentium sequi quas earum maiores, laudantium voluptatum corrupti porro.
+     
+                </p>
+            </div>
+            <div class="link">
+                <p>Special</p>
+             <ul>
+                 <li><a href="#">Home</a></li>
+                 <li><a href="#">Privacy Policy</a></li>
+                 <li><a href="#">Disclaimer</a></li>
+                 <li><a href="html pages/coantact.html">Contact</a></li>
+                 <li><a href=#>Colloboraters</a></li>
+             </ul>
+            </div>
+            <div class="link">
+                <p>Details</p>
+             <ul>
+                 <li><a href="#">Transaction</a></li>
+                 <li><a href="#">Best</a></li>
+                 <li><a href="#">Location</a></li>
+                 <li><a href=#>Customers</a></li>
+                 <li><a href=#>Tenants</a></li>
+             </ul>
+            </div>
+            </div>
+           
+            <div class="social">
+                <span class="face"><i class="fa fa-facebook"></i></span>
+                <span class="twit"><i class="fa fa-twitter"></i></span>
+                <span class="insta"><i class="fa fa-instagram"></i></span>
+                <span class="linked"><i class="fa fa-linkedin"></i></span>
+                <span class="gmail"><i class="fa fa-google-plus"></i></span>
+            </div>
+           <span class="last"> Copyright &copy; All Rights Are Reserved.</span>
+           
+    </div>
+        </div>
+       
+        <script>
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+
+  if (n > slides.length) {
+      slideIndex = 1
+      } 
+  if (n < 1) {
+      slideIndex = slides.length
+      }
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+
+  slides[slideIndex-1].style.display = "block"; 
+
+}
+        </script>
+
+
+
+<script>
+    function sidebar(){
+        var x=document.querySelectorAll("header nav ul li");
+        var y=document.querySelector("header nav");
+        y.style.display="block";
+        y.style.right="0px";
+        x[0].style.display="block";
+        x[1].style.display="block";
+        x[2].style.display="block";
+    y.style.top="0px";
+        document.querySelector("header .fa-times").style.display="block";
+        
+        
+    }
+    function closesidebar(){
+      
+        var y=document.querySelector("header nav");
+      
+        y.style.display="block";
+        y.style.right="-200px";
+        y.style.top="-200px";
+        document.querySelector("header .fa-times").style.display="none"; 
+    
+        
+    }
+    function my(x){
+        if(x.matches){
+        var x=document.querySelectorAll("header nav ul li");
+        var y=document.querySelector("header nav");
+      
+        y.style.display="block";
+        y.style.right="-200px";
+    
+        x[0].style.display="inline-block";
+        x[1].style.display="inline-block";
+        x[2].style.display="inline-block";
+      
+        document.querySelector("header .fa-times").style.display="none"; 
+       
+
+    }
+    }
+
+    var mc=window.matchMedia("(min-width:1100px)");
+my(mc);
+mc.addListener(my);
+
+
+ 
+</script>
+</body>
+</html>

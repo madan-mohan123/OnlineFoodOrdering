@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css_files/moreinfo.css">
+    <link rel="stylesheet" href="../css_files/paymentMode.css" />
+</head>
+<style>
+  body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(blue,white);
+    background-color: blueviolet;
+}
+</style>
+<body>
+    <div class="container " id="container">
+        <form action="" id="form1">
+            <img src="../images/logo.png" alt="">
+            <div class="btn-box">
+                <button type="button" id="fast" style="width: 100%;">Fast Delivery</button>
+            </div>
+
+<div class="btn-box">
+    <button type="button" id="normal" style="width: 100%;">Normal Delivery</button>
+</div>
+        </form>
+        <form action="" id="form2">
+            <img src="../images/logo.png" alt="">
+            <h2 style="color: coral;">1. RS 100 More than Normal Deliver</h2>
+            <h2 style="color: coral;">2. Get Bonus on Delivery</h2>
+            <h2 style="color: coral;">3. It takes 15-20 Minutes.</h2>
+          
+               
+           
+<div class="btn-box">
+    <button type="button" id="back1" >Back</button>
+    <button type="button" id="next1" >Next</button>
+</div>
+        </form>
+
+        <form action="" id="form3">
+            <img src="../images/logo.png" alt="">
+            <h2 style="color: coral;">1. No Extra Delivery Charge</h2>
+            <h2 style="color: coral;">2. No Discount</h2>
+            <h2 style="color: coral;">3. It takes 2-3 Hours.</h2>
+<div class="btn-box">
+    <button type="button" id="back2" >Back</button>
+    <button type="button" id="next2" >Next</button>
+</div>
+        </form>
+     
+       
+
+        <div class="step-row">
+<div id="prog"></div>
+            <div class="step-col">
+              Delivery
+            </div>
+            <div class="step-col">
+                Fast/Normal
+            </div>
+            <div class="step-col">
+                Transaction
+            </div>
+        </div>
+    </div>
+
+    <form action="" id="form4">
+        <div class="checkout-panel">
+            <div class="panel-body">
+              <h2 class="title">Checkout</h2>
+      
+              <div class="progress-bar">
+                <div class="step active"></div>
+                <div class="step active"></div>
+                <div class="step"></div>
+                <div class="step"></div>
+              </div>
+      
+              <div class="payment-method" >
+                <label for="card" class="method card">
+                  <div class="card-logos">
+                    <img src="../images/visa_logo.png" alt="Visa Logo" class="visa" />
+                    <img
+                      src="../images/mastercard_logo.png"
+                      alt="Mastercard logo"
+                      class="master"
+                    />
+                  </div>
+      
+                  <div class="radio-input">
+                    <input id="card" type="radio" name="payment" />
+                    Pay Rupees 340.00 with credit card
+                  </div>
+                </label>
+      
+                <label for="paypal" class="method paypal">
+                  <img
+                    src="../images/paypal_logo.jpeg"
+                    alt="Paypal logo"
+                    class="paypal"
+                  />
+                  <div class="radio-input">
+                    <input id="paypal" type="radio" name="payment" />
+                    Pay Rupees 340.00 with Paypal
+                  </div>
+                </label>
+              </div>
+      
+              <div class="input-fields">
+                <div class="column-1">
+                  <label for="cardholder">Cardholder's Name</label>
+                  <input type="text" id="cardholder" />
+      
+                  <div class="small-inputs">
+                    <div>
+                      <label for="date">Valid thru</label>
+                      <input type="text" id="date" placeholder="MM / YY" />
+                    </div>
+      
+                    <div>
+                      <label for="verification">CVV / CVC *</label>
+                      <input type="password" id="verification" />
+                    </div>
+                  </div>
+                </div>
+                <div class="column-2">
+                  <label for="cardnumber">Card Number</label>
+                  <input type="password" id="cardnumber" />
+      
+                  <span class="info"
+                    >* CVV or CVC is the card security code, unique three digits
+                    number on the back of your card separate from its number.</span
+                  >
+                </div>
+              </div>
+            </div>
+      
+            <div class="panel-footer">
+              <a class="btn back-btn" href="#" id="back3">Back</a>
+              <a class="btn next-btn" href="../html/Search.php" >Skip Now</a>
+            </div>
+          </div>
+
+    </form>
+    <script src="../javascript/feedback.js"></script>
+</body>
+</html>

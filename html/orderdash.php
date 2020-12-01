@@ -32,6 +32,7 @@
 <div id="container">
 <img src="../images/logo.png" alt="">
 <h2 style="text-align: center;color:orangered;">Get Your Food</h2>
+
 <form action="orderdash.php" method="POST">
 
 <label for="">Contact No</label>
@@ -74,11 +75,19 @@ if(mysqli_num_rows($result)){
     document.querySelector(".section-5").style.display="block";
     </script>';
     while($row=mysqli_fetch_assoc($result)){
-        
+        echo '  <div class="cards1">';
+$fname=$row['food_name'];
+$hotelid=$row['hotel_id'];
 
+       $sqle="SELECT pic FROM hotelmenu where food_name='$fname' and hotel_id='$hotelid'";
+       $resulte= mysqli_query($con,$sqle);
 
-      echo '  <div class="cards1">
-      <img src="../images/f2.jpg" alt="">
+       if(mysqli_num_rows($resulte)){
+        while($rowe=mysqli_fetch_assoc($resulte)){
+      echo "<img src='../images/".$rowe['pic']."' >";
+        }
+    }
+      echo'
       ';
 echo ' <h2 style="text-align: center;">';echo $row['food_name'];echo '</h2>';
  echo '<p style="font-size:17px;color: teal;margin: 0 0;padding:0 10px;"> <b><span style="color:black;">Hotel : </b></span>';echo $row['hotel_name'] ;echo '</p>';    

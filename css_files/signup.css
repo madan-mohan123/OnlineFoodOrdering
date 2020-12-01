@@ -23,7 +23,7 @@
     
   }
   .container-2 {
-    padding-top: 20px;
+    padding-top: 10px;
     width: 420px;
     height: 550px;
     background-color: white;
@@ -33,12 +33,12 @@
   
   }
   .container-2 img {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     box-shadow: 0 0 10px 3px orange;
     margin: auto;
-
+margin-bottom: 20px;
     display: block;
   }
   .container-2 h2 {
@@ -60,15 +60,22 @@
     display: block;
     margin-left: 40px;
   }
-  .container-2 .field {
-    display: block;
-    width: 80%;
-    margin: 30px auto;
-    border: hidden;
-    height: 40px;
-    border-bottom: 2px solid rgba(10, 10, 10, 0.5);
-    background-color: white;
+ 
+
+  .form-control{
+    /* border: 2px solid red; */
+    padding-left:9px;
+    padding-right:9px;
+    margin-bottom: 10px;
   }
+
+  .form-control input{
+    display: inline-block;
+    width: 95%;
+    height: 40px;
+    margin: 0 auto;
+  }
+
 
   .container-2 input[type="submit"] {
     display: block;
@@ -128,3 +135,21 @@
     justify-content: center;
     align-items: center;
   }
+  .msg{
+    margin-top: 5px;
+    color: red;
+}
+
+i.icon{
+    color: green;
+    display: none;
+}
+i.ricon{
+    color: red;
+    display: none;
+}
+
+.container-2 input {
+
+padding:0 10px 0 5px;
+}

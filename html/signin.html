@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="../css_files/signup.css"> -->
+  
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="../css_files/signin.css">
@@ -12,18 +12,31 @@
     
   </head>
   <body>
-    <h1 style="text-align: center;margin: 30px 0 20px 0;">Login Here</h1>
+    
     <div class="container">
+      <div class="arti">
+        <a href="../index.html"><img src="../images/logo.png" height="100px " width="100px" alt=""></a>
+           <h1 style="color: white;">LogIn Here!</h1>
+          <h1 style="color: white;">Hot Food</h1>
+          <h2 style="color: blueviolet;">Enjoy Best food orders from here with Fast Delivery!</h2>
+          </div>
     <main class="container-2">
-     
-      <img src="../images/logo.png" alt="" />
+      <a href="../index.html"><img src="../images/logo.png" alt="" /></a>
      
       <form action="../php/login.php" method="POST">
+        <div class="form-control ">
+          <input type="text" placeholder="Enter Email" name="email"  id="email" oninput="checkInputsEmail()" required/>
+          <i style="margin-left: -23px;" class="fa fa-check icon"></i>
+          <i style="margin-left: -23px;" class="fa fa-certificate ricon" aria-hidden="true"></i>
+          <div class="msg" style="margin-top: 5px;"></div>
+    </div>
        
-      <input type="text" placeholder="Email" name="email" class="field" required/>
-
-      <input type="password" placeholder="Password" name="pass" class="field" required />
-
+     <div class="form-control ">
+        <input type="password" placeholder="Enter PassWord" name="pass"  id="pass" oninput="checkInputsPass()" required/>
+        <i style="margin-left: -23px;" class="fa fa-check icon"></i>
+        <i style="margin-left: -23px;" class="fa fa-certificate ricon" aria-hidden="true"></i>
+        <div class="msg" style="margin-top: 5px;"></div>
+  </div>
       <label for="">
         <input type="checkbox" required />
         <span style="padding-left: 20px; opacity: 0.6">Accept the</span>
@@ -49,29 +62,8 @@
      
     </main>
 </div>
-    <script>
-      function validation() {
-        var name = document.f1.name.value;
-        var ps = document.f1.password.value;
-        var email = document.f1.email.value;
-        if (name.length == "" && ps.length == "" && email.length == "") {
-          alert("User Name, Password, Email fields are empty");
-          return false;
-        } else {
-          if (name.length == "") {
-            alert("User Name is empty");
-            return false;
-          }
-          if (ps.length == "") {
-            alert("Password field is empty");
-            return false;
-          }
-          if (email.length == "") {
-            alert("email field is empty");
-            return false;
-          }
-        }
-      }
+    <script src="../javascript/validate.js">
+     
     </script>
   </body>
 </html>

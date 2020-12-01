@@ -1,0 +1,126 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(blue,white);
+}
+.container{
+    /* background-color: white; */
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    position: relative;
+    transition: 0.6s;
+    overflow: hidden;
+    background-image: linear-gradient(rgb(128, 128, 219),rgb(224, 81, 193));
+  
+  }
+.container form{
+    width: 460px;
+    position: absolute;
+    left: 40px;
+    top:80px;
+    /* background-color: white; */
+
+}
+form h3{
+    text-align: center;
+    margin-bottom: 20px;
+    color: red;
+}
+
+form input{
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+.btn-box{
+    margin: 30px auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+form button{
+    width: 120px;
+    height: 35px;
+    background-color: rgb(236, 167, 16);
+    color: rgb(240, 12, 12);
+    border-radius: 10px;
+    border:none;
+    outline: none;
+    border:2px solid red;
+    box-shadow: 0 0 3px 3px orange;
+    margin-right: 20px;
+}
+#form2{
+    left:550px;
+}
+#form3{
+    left:550px;
+}
+#form4{
+    display: none;
+}
+form button:hover{
+    transform: scale(0.9);
+}
+.step-row{
+    width: 550px;
+    height: 40px;
+    /* box-shadow: 0px -1px 5px  -px gray ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rebeccapurple;
+}
+.step-col{
+    width: 183.3px;
+    text-align: center;
+    color: rgb(238, 238, 238);
+    position: relative;
+    z-index: 1;
+  
+   
+}
+#prog{
+    width: 183.3px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    background-image: linear-gradient(rgb(29, 221, 211),rgb(62, 126, 245));
+    transition: 0.6s;
+}
+#prog::after{
+    content: '';
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    right: -20px;
+    border-left: 20px solid rgb(36, 218, 218);
+}
+#form1 img,#form2 img,#form3 img{
+    width: 150px;
+    height: 150px;
+    margin: 10px auto;
+    display: block;
+}
+#form1 input[type="checkbox"]{
+    display: inline-block;
+    margin-right: 20px;
+}

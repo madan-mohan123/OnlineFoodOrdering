@@ -6,6 +6,9 @@
   box-sizing: border-box;
   font-family: "Oswald", sans-serif;
 }
+body{
+  height: 100vh;
+}
 fieldset {
   padding: 20px;
   width: 900px;

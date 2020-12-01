@@ -5,66 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  
-    <link rel="stylesheet" href="../OnlineFoodOrdering/css_files/index.css">
+  <link rel="stylesheet" href="css_files/bootstrap.min.css">
+    <link rel="stylesheet" href="css_files/index.css">
     <title>Hot Food</title>
-    <style>
-        body{
-        background-image: url(images/pro2.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-        }
-
    
-          .fa-tasks,.fa-home,.fa-tasks{
-        margin-right: 15px;
-       font-size: 20px;
-       
-    }
-    .fa-search{
-        margin-right: 10px;
-       font-size: 20px;  
-    }
-  
-       
-    </style>
-   
+ 
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid ">
         <header>
             <img src="images/logo.png"  alt="">
+          
             <p><b>Order <span style="color: rgb(9, 223, 238); opacity: 0.7;font-size:30px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> Food Now</span></b></p>
-           <nav>
+            <i class="fa fa-bars" aria-hidden="true" onclick="sidebar()"></i>
+            <nav>
+            <i class="fa fa-times" aria-hidden="true" onclick="closesidebar()"></i>
             <ul>
-                <!-- <li><a href="#" class="bar">B</a></li> -->
+               
                 <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>home</a></li>
                 
                 <li>
-                    <a href="#">Restaurants</a>
-                    
-                        <div class="menu">
-                        <ul style="display: inline-block;">
-                            <li><a href="#bill">Taj</a></li>
-                            <li><a href="#" onclick="dashboard()">Abhinandan</a></li>
-                            <li><a href="#" onclick="tenant()">Mukund</a></li>
-                            <li><a href="#" onclick="profile()">Ram Hotel</a></li>
-                            <li><a href="Owner.html">Brijwasi</a></li>
-                            <li><a href="#" onclick="complaint()">Radhey Radhey</a></li>
-                            <li><a href="#">Details</a></li>
-                        </ul>
-                        <ul style="display: inline-block;">
-                            <li><a href="#bill">Billing</a></li>
-                            <li><a href="#" onclick="dashboard()">Gokul</a></li>
-                            <li><a href="#" onclick="tenant()">Kfc</a></li>
-                            <li><a href="#" onclick="profile()">NiceFront</a></li>
-                            <li><a href="Owner.html">Choice</a></li>
-                            <li><a href="#" onclick="complaint()">Favorite Food</a></li>
-                            <li><a href="#">Details</a></li>
-                        </ul>
-                      
-                    </div>
+                    <a href="html/Search.php"><i class="fa fa-h-square" aria-hidden="true"></i>Restaurants</a>
+                   
                     </li>
                     <li><a href="html/signup.html"><i class="fa fa-tasks" aria-hidden="true"></i>Join</a></li>
 
@@ -79,7 +41,7 @@
             <p> ORDER TAKE AWAY ONLINE</p>
             <h2 style="color: white;text-align: center;">FROM YOUR FAVORITE RESTAURENT</h2>
         </div>
-        <!-- <span class="search"><a href=""><i class="fa fa-search" aria-hidden="true"></i>Search</a></span> -->
+       
          <a href="html/Search.php"><i class="fa fa-search" aria-hidden="true"></i>Search</a>
             <div class="icon">
             <i class="fa fa-clock-o" aria-hidden="true"> 24/7 Delivery</i>
@@ -89,54 +51,242 @@
         </div>
            
         </section>
-        <section class="section-2">
+     
+
+        <!-- <section class="section-2 ">   
 <p>MORE THAN <span style="color:orange">500+ DISHES</span>  TO ORDER</p>
-<h2 style="text-align: center;color: white;opacity: 0.8;margin-bottom: 40px;"> Welcome to the best online ordering services</h2>
-<div class="cards">
-    <img src="images/burger.jpg" alt="">
-    <h2 style="text-align: center;">Burger</h2>
-    <h3 style="text-align: center;color: gray;opacity: 0.8;margin-top: 20px;">Taj Hotel</h3>
-  
+<h2 style="text-align: center;color: white;opacity: 0.8;"> Welcome to the best online ordering services</h2>
+<div class="row pl-2 pr-2 no-gutters">
+  <div class="col-sm-6 col-md-3 col-lg-3 col-xs-4 pl-2 pr-2">
+<div class="card text-left">
+  <img class="card-img-top" src="images/pizza.jpg" alt="">
+  <div class="card-body">
+    <h4 class="card-title">Pizza</h4>
+    <p class="card-text">
+      <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+    </p>
+  </div>
 </div>
-<div class="cards">
-    <img src="images/pizza.jpg" alt="">
-    <h2 style="text-align: center;">Pizza</h2>
-    <h3 style="text-align: center;color: gray;opacity: 0.8;margin-top: 20px;">Centrum</h3>
+
+    </div>
+    <div class="col-sm-6 col-md-3 col-lg-3 col-xs-4 pl-2 pr-2">
+        <div class="card text-left">
+          <img class="card-img-top" src="images/burger.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Burger</h4>
+            <p class="card-text">
+              <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+            </p>
+          </div>
+        </div>
+        
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3 col-xs-4 pl-2 pr-2">
+                <div class="card text-left">
+                  <img class="card-img-top" src="images/aloo mattar.jpg" alt="">
+                  <div class="card-body">
+                    <h4 class="card-title">Aloomatar</h4>
+                    <p class="card-text">
+                      <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+                    </p>
+                  </div>
+                </div>
+                
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3 col-xs-4 pl-2 pr-2">
+                        <div class="card text-left">
+                          <img class="card-img-top" src="images/cake.jpg" alt="">
+                          <div class="card-body">
+                            <h4 class="card-title">Cake</h4>
+                            <p class="card-text">
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span></p>
+                          </div>
+                        </div>
+                        
+                            </div>
+                        
 </div>
-<div class="cards">
-    <img src="images/f2.jpg" alt="">
-    <h2 style="text-align: center;">Dosa</h2>
-    <h3 style="text-align: center;color: gray;opacity: 0.8;margin-top: 20px;">Abhinandan</h3>
-</div>
-<div class="cards">
-    <img src="images/f1.jpg" alt="">
-    <h2 style="text-align: center;">Itali</h2>
-    <h3 style="text-align: center;color: gray;opacity: 0.8;margin-top: 20px;">Baba Ka Dhaba</h3>
-</div>
-<!-- <h2 style="margin-top: 70px;margin-left: 30%; display: inline-block; text-align: center; opacity: 0.7;">Much more your favorite food</h2> -->
 <a href="html/Search.html">More category</a>
         </section>
+
+
+ -->
+
+
+        <section class="section-2 " >   
+          <p>MORE THAN <span style="color:orange">500+ DISHES</span>  TO ORDER</p>
+          <h2 style="text-align: center;color: white;opacity: 0.8;"> Welcome to the best online ordering services</h2>
+          <div class="row pl-2 pr-2 no-gutters" >
+              <div class="col-sm-6 col-md-3 col-lg-3 col-xs-4 pl-2 pr-2 mycarts">
+          <div class="card text-left">
+            <img class="card-img-top" src="images/pizza.jpg" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Pizza</h4>
+              <p class="card-text">
+                <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+              </p>
+            </div>
+          </div>
+          
+              </div>
+              <div class="col-sm-6 col-md-3 col-lg-3 col-xs-4 pl-2 pr-2 mycarts">
+                  <div class="card text-left">
+                    <img class="card-img-top" src="images/burger.jpg" alt="">
+                    <div class="card-body">
+                      <h4 class="card-title">Burger</h4>
+                      <p class="card-text">
+                        <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+                      </p>
+                    </div>
+                  </div>
+                  
+                      </div>
+                      <div class="col-sm-6 col-md-3 col-lg-3 col-xs-4 pl-2 pr-2 mycarts">
+                          <div class="card text-left">
+                            <img class="card-img-top" src="images/aloo mattar.jpg" alt="">
+                            <div class="card-body">
+                              <h4 class="card-title">Aloomatar</h4>
+                              <p class="card-text">
+                                <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+                              </p>
+                            </div>
+                          </div>
+                          
+                              </div>
+                              <div class="col-sm-6 col-md-3 col-lg-3 col-xs-4 pl-2 pr-2 mycarts">
+                                  <div class="card text-left">
+                                    <img class="card-img-top" src="images/cake.jpg" alt="">
+                                    <div class="card-body">
+                                      <h4 class="card-title">Cake</h4>
+                                      <p class="card-text">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span></p>
+                                    </div>
+                                  </div>
+                                  
+                                      </div>  
+                                      <div class="col-sm-6 col-md-3 col-lg-3 col-xs-4 pl-2 pr-2 mycarts " style="display: none;">
+                                        <div class="card text-left">
+                                          <img class="card-img-top" src="images/aloo gobi.jpg" alt="">
+                                          <div class="card-body">
+                                            <h4 class="card-title">Gobi</h4>
+                                            <p class="card-text">
+                                              <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star"></span>
+                                              <span class="fa fa-star"></span></p>
+                                          </div>
+                                        </div>
+                                        
+                                            </div>  
+                                            <div class="col-sm-6 col-md-3 col-lg-3 col-xs-4 pl-2 pr-2 mycarts " style="display: none;">
+                                              <div class="card text-left">
+                                                <img class="card-img-top" src="images/dosa.jpg" alt="">
+                                                <div class="card-body">
+                                                  <h4 class="card-title">Dosa</h4>
+                                                  <p class="card-text">
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span></p>
+                                                </div>
+                                              </div>
+                                              
+                                                  </div> 
+                                                  <div class="col-sm-6 col-md-3 col-lg-3 col-xs-4 pl-2 pr-2 mycarts" style="display: none;">
+                                                    <div class="card text-left">
+                                                      <img class="card-img-top" src="images/hotdog.jpg" alt="">
+                                                      <div class="card-body">
+                                                        <h4 class="card-title">Hotdog</h4>
+                                                        <p class="card-text">
+                                                          <span class="fa fa-star checked"></span>
+                                                          <span class="fa fa-star checked"></span>
+                                                          <span class="fa fa-star checked"></span>
+                                                          <span class="fa fa-star"></span>
+                                                          <span class="fa fa-star"></span></p>
+                                                      </div>
+                                                    </div>
+                                                    
+                                                        </div>
+                                                        <div class="col-sm-6 col-md-3 col-lg-3 col-xs-4 pl-2 pr-2 mycarts" style="display: none;">
+                                                            <div class="card text-left">
+                                                              <img class="card-img-top" src="images/gajar.jpg" alt="">
+                                                              <div class="card-body">
+                                                                <h4 class="card-title">Halwa</h4>
+                                                                <p class="card-text">
+                                                                  <span class="fa fa-star checked"></span>
+                                                                  <span class="fa fa-star checked"></span>
+                                                                  <span class="fa fa-star checked"></span>
+                                                                  <span class="fa fa-star"></span>
+                                                                  <span class="fa fa-star"></span></p>
+                                                              </div>
+                                                            </div>
+                                                            
+                                                                </div>
+                                                                <button  class="mypre" onclick="mplusSlides(-1)">&#10094;</button>
+                                                                <button class="mynext" onclick="mplusSlides(1)">&#10095;</button>
+          </div>
+          <!-- <button  class="mypre" onclick="mplusSlides(-1)">&#10094;</button>
+    <button class="mynext" onclick="mplusSlides(1)">&#10095;</button> -->
+          <a href="html/Search.html">More category</a>
+                  </section>
+
 
          <section class="section-3">
 <p>HOW TO ORDER ?</p>
 <h3 style="text-align: center;opacity: 0.9;color: gray;margin: 20px 0 40px 0;">Follow the steps</h3>
-<div class="mhow">
-<div class="how">
+<div class="row no-gutters">
+  <div class="col-sm-6 col-md-3 col-lg-3 col-xs-4">
 <img src="images/loc.png" width="200px" height="200px" alt="">
 <figcaption>Choose Location</figcaption>
 </div>
-<div class="how">
+
+<div class="col-sm-6 col-md-3 col-lg-3 col-xs-4 pl-2 pr-2">
     <img src="images/restaurant.jpg" width="200px" height="200px" alt="">
     <figcaption>Choose Restaurants</figcaption>
     </div>
-    <div class="how">
+    <div class="col-sm-6 col-md-3 col-lg-3 col-xs-4 pl-2 pr-2">
         <img src="images/order.png" width="200px" height="200px" alt="">
         <figcaption>Choose Order</figcaption>
         </div>
-        <div class="how">
+        <div class="col-sm-6 col-md-3 col-lg-3 col-xs-4 pl-2 pr-2">
             <img src="images/food.png" width="200px" height="200px" alt="">
             <figcaption>Choose Food</figcaption>
             </div>
+
 </div>
         </section>
 
@@ -152,40 +302,82 @@
         
         </section> 
 
-       <section class="section-5">
+       <section class="section-2">
            <p>WHAT'S POPULAR</p>
            <h2 style="text-align: center;opacity: 0.9;color: gray;margin-bottom: 40px;">Client's favorite</h2>
-           <div class="cards1">
-            <img src="images/f2.jpg" alt="">
+           <div class="row pl-2 pr-2 no-gutters">
+            <div class="col-sm-6 col-md-3 col-lg-3 col-xs-4 pl-2 pr-2">
+        <div class="card text-left">
+          <img class="card-img-top" src="images/aloo gobi.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Aloogobi</h4>
+            <p class="card-text">
+              <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+            </p>
            
-            <h2 style="text-align: center;">Burger</h2>
-            <h3 style="text-align: center;color: gray;opacity: 0.8;margin: 20px 0;">Choose your burger</h3>
-            <p> Order Now </p>
+            <p class="text-center" style="background-color: orange;border-radius: 20px;padding: 5px 10px;">Order</p>
+          </div>
         </div>
-      
-        <div class="cards1">
-            <img src="images/f1.jpg" alt="">
-            <h2 style="text-align: center;">Pizza</h2>
-            <h3 style="text-align: center;color: gray;opacity: 0.8;margin: 20px 0;">Choose your pizza</h3>
-            <p> Order Now </p>
-        </div>
-        <div class="cards1">
-            <img src="images/f2.jpg" alt="">
-            <h2 style="text-align: center;">Dal Makhni</h2>
-            <h3 style="text-align: center;color: gray;opacity: 0.8;margin: 20px 0;">Choose your Daal makhni</h3>
-            <p> Order Now </p>
-        </div>
-        <div class="cards1">
-            <img src="images/manc.jpg" alt="">
-            <h2 style="text-align: center;">Manchoorian</h2>
-            <h3 style="text-align: center;color: gray;opacity: 0.8;margin: 20px 0;">Choose your Manchoorian</h3>
-            <p> Order Now </p>
+        
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3 col-xs-4 pl-2 pr-2">
+                <div class="card text-left">
+                  <img class="card-img-top" src="images/bhatura.gif" alt="">
+                  <div class="card-body">
+                    <h4 class="card-title">Bhatura</h4>
+                    <p class="card-text"><span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span></p>
+                    <p class="text-center" style="background-color: orange;border-radius: 20px;padding: 5px 10px;">Order</p>
+       
+                  </div>
+                </div>
+                
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3 col-xs-4 pl-2 pr-2">
+                        <div class="card text-left">
+                          <img class="card-img-top" src="images/chilypatato.jpg" alt="">
+                          <div class="card-body">
+                            <h4 class="card-title">chilypatato</h4>
+                            <p class="card-text"><span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span></p>
+                            <p class="text-center" style="background-color: orange;border-radius: 20px;padding: 5px 10px;">Order</p>
+       
+                          </div>
+                        </div>
+                        
+                            </div>
+                            <div class="col-sm-6 col-md-3 col-lg-3 col-xs-4 pl-2 pr-2">
+                                <div class="card text-left">
+                                  <img class="card-img-top" src="images/gullab.jpg" alt="">
+                                  <div class="card-body">
+                                    <h4 class="card-title">Gulabjamun</h4>
+                                    <p class="card-text"><span class="fa fa-star checked"></span>
+                                      <span class="fa fa-star checked"></span>
+                                      <span class="fa fa-star checked"></span>
+                                      <span class="fa fa-star"></span>
+                                      <span class="fa fa-star"></span></p>
+                                    <p class="text-center" style="background-color: orange;border-radius: 20px;padding: 5px 10px;">Order</p>
+       
+                                  </div>
+                                </div>
+                                
+                                    </div>
+                                
         </div>
        </section> 
        <section class="section-6">
            <h1 style="text-align: center;padding: 50px 0 30px 0;font-size: 50px;">Hot Deal</h1>
            <article class="deal">
-
            <img src="images/r2.jpg" alt="">
            <article class="circle">
            <article class="circle1"><span style="color: rgb(230, 9, 64); margin-right: 10px;"><b> Days</b> </span>122</article>
@@ -193,57 +385,92 @@
            <article class="circle3"><span style="color: rgb(230, 9, 64);margin-right: 10px;"><b> Minutes</b> </span> 6</article>
            <article class="circle4"><span style="color: rgb(230, 9, 64);margin-right: 10px;"><b> Seconds</b> </span> 78</article>
            </article>
-           <!-- <h2 style="text-align: center;color: rgb(126, 119, 119);margin: 50px 0 20px 0;">More Details</h2> -->
-           <a href="#">Click Here</a>
+             <a href="#">Click Here</a>
            </article>
            
        </section>
-       <section class="section-7">
+       
+        
+    </section>
+       <section class="section-2">
         <p>New Dishes</p>
         <h2 style="text-align: center;opacity: 0.9;color: gray;margin-bottom: 40px;">Get Order Now</h2>
-        <div class="cards1">
-         <img src="images/f2.jpg" alt="">
-         <h2 style="text-align: center;">Burger</h2>
-         <p>ORDER</p>
-        
-     </div>
-     <div class="cards1">
-         <img src="images/f1.jpg" alt="">
-         <h2 style="text-align: center;">Burger</h2>
-         <p >ORDER</p>
-     </div>
-     <div class="cards1">
-         <img src="images/f2.jpg" alt="">
-         <h2 style="text-align: center;">Burger</h2>
-         <p>ORDER</p>
-     </div>
+        <div class="row pl-2 pr-2 no-gutters">
+          <div class="col-sm-6 col-md-3 col-lg-3 col-xs-4 pl-2 pr-2">
+      <div class="card text-left">
+        <img class="card-img-top" src="images/samosa.jxr" alt="">
+        <div class="card-body">
+          <h4 class="card-title">Samosha</h4>
+         
+         
+          <p class="text-center" style="background-color: orange;border-radius: 20px;padding: 5px 10px;">Order</p>
+        </div>
+      </div>
+      
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3 col-xs-4 pl-2 pr-2">
+              <div class="card text-left">
+                <img class="card-img-top" src="images/hotdog.jpg" alt="">
+                <div class="card-body">
+                  <h4 class="card-title">Hotdog</h4>
+                
+                  <p class="text-center" style="background-color: orange;border-radius: 20px;padding: 5px 10px;">Order</p>
      
+                </div>
+              </div>
+              
+                  </div>
+                  <div class="col-sm-6 col-md-3 col-lg-3 col-xs-4 pl-2 pr-2">
+                      <div class="card text-left">
+                        <img class="card-img-top" src="images/gajar.jpg" alt="">
+                        <div class="card-body">
+                          <h4 class="card-title">Halwa</h4>
+                        
+                          <p class="text-center" style="background-color: orange;border-radius: 20px;padding: 5px 10px;">Order</p>
+     
+                        </div>
+                      </div>
+                      
+                          </div>
+                          <div class="col-sm-6 col-md-3 col-lg-3 col-xs-4 pl-2 pr-2">
+                              <div class="card text-left">
+                                <img class="card-img-top" src="images/mango lassi.jpg" alt="">
+                                <div class="card-body">
+                                  <h4 class="card-title">Lassi</h4>
+                                  <p class="text-center" style="background-color: orange;border-radius: 20px;padding: 5px 10px;">Order</p>
+     
+                                </div>
+                              </div>
+                              
+                                  </div>
+                              
+      </div>
        </section>
 <h1 style="text-align: center;margin: 30px;color: white;">Our Best Cook's</h1>
      
-<section class="slideshow-container">
+<section class="myslideshow-container">
 
-    <div class="mySlides fade">
+    <div class="mySlides myfade">
   
-      <img src="images/avatar1.png" >
-      <div class="text"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae minus repellat cumque fuga id! Ipsum dignissimos fuga praesentium doloremque eaque illum nisi, aliquam tenetur eligendi. Quas incidunt nostrum at neque.
+      <img src="images/cook4.jpg" >
+      <div class="mytext"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae minus repellat cumque fuga id! Ipsum dignissimos fuga praesentium doloremque eaque illum nisi, aliquam tenetur eligendi. Quas incidunt nostrum at neque.
 
       </p>
     </div>
     </div>
   
-    <div class="mySlides fade">
+    <div class="mySlides myfade">
     
-      <img src="images/avatar2.png" >
-     <div class="text"><p>Lorem ipsum, djksjlkjljas Beatae minus repellat cumque fuga id! Ipsum dignissimos fuga praesentium doloremque eaque illum nisi, aliquam tenetur eligendi. Quas incidunt nostrum at neque.
+      <img src="images/cook3.jpg" >
+     <div class="mytext"><p>Lorem ipsum, djksjlkjljas Beatae minus repellat cumque fuga id! Ipsum dignissimos fuga praesentium doloremque eaque illum nisi, aliquam tenetur eligendi. Quas incidunt nostrum at neque.
    </p>
     </div>
     </div>
   
-    <div class="mySlides fade">
+    <div class="mySlides myfade">
      
-      <img src="images/avatar3.png" >
-      <div class="text"><p>Lorem ipsumcnknkdjlksc pisicing elit. Beatae minus repellat cumque fuga id! Ipsum dignissimos fuga praesentium doloremque eaque illum nisi, aliquam tenetur eligendi. Quas incidunt nostrum at neque.
+      <img src="images/cook6.jpg" >
+      <div class="mytext"><p>Lorem ipsumcnknkdjlksc pisicing elit. Beatae minus repellat cumque fuga id! Ipsum dignissimos fuga praesentium doloremque eaque illum nisi, aliquam tenetur eligendi. Quas incidunt nostrum at neque.
     </p>
 </div>
     </div>
@@ -286,7 +513,19 @@
              </ul>
             </div>
             </div>
-           
+           <div class="vid" style="margin-top: 20px;">
+             <video src="video/s3-project.mp4" controls style="border-radius:15px;margin-right: 40px;height: 200px; width: 300px;display: inline-block"></video>
+             
+             <address style="display: inline-block;font-size: 20px;">
+              <pre style="color: white;">
+               <span style="color: rgb(255, 115, 0);font-size: 25px;"> <u>Contact us At: </u></span>
+              Email: glauinversity@gmail.com 
+              Contact: +91 7654543498
+              Address: 18km stone ,chaumuha
+              </pre>
+            </address>
+           </div>
+          
             <div class="social">
                 <span class="face"><i class="fa fa-facebook"></i></span>
                 <span class="twit"><i class="fa fa-twitter"></i></span>
@@ -306,10 +545,12 @@ showSlides(slideIndex);
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
+
 }
 
 
 function showSlides(n) {
+
   var i;
   var slides = document.getElementsByClassName("mySlides");
 
@@ -327,5 +568,112 @@ function showSlides(n) {
 
 }
         </script>
+
+
+<script>
+  var slidein = 4;
+function mplusSlides(n) {
+  if(n>0){
+  mshowSlides(slidein += n);
+  }
+  else{
+    mshowSlidesminus(slidein += n);
+  }
+}
+
+
+function mshowSlides(n) {
+  var i;
+  var mslides = document.getElementsByClassName("mycarts");
+
+  if (n > mslides.length) {
+      slidein = mslides.length;
+      } 
+  if (n < 1) {
+      slidein = mslides.length;
+      }
+if(n <= mslides.length && n>4){
+  mslides[n-5].style.display = "none"; 
+  mslides[n-1].style.display = "block"; 
+  mslides[n-2].style.display = "block"; 
+  mslides[n-3].style.display = "block"; 
+  mslides[n-4].style.display = "block"; 
+}
+
+}
+
+function mshowSlidesminus(n) {
+  
+  var i;
+  var mslides = document.getElementsByClassName("mycarts");
+  if (n > mslides.length) {
+      slidein = mslides.length;
+      } 
+  if (n < 4) {
+      slidein = 4;
+      }
+if(n <= mslides.length && n>=4){
+  mslides[n-1].style.display = "block"; 
+  mslides[n-2].style.display = "block"; 
+  mslides[n-3].style.display = "block"; 
+  mslides[n-4].style.display = "block"; 
+  mslides[n].style.display = "none"; 
+}
+
+}
+        </script>
+
+
+
+<script>
+    function sidebar(){
+        var x=document.querySelectorAll("header nav ul li");
+        var y=document.querySelector("header nav");
+        y.style.display="block";
+        y.style.right="0px";
+        x[0].style.display="block";
+        x[1].style.display="block";
+        x[2].style.display="block";
+    y.style.top="0px";
+        document.querySelector("header .fa-times").style.display="block";
+        
+        
+    }
+    function closesidebar(){
+      
+        var y=document.querySelector("header nav");
+      
+        y.style.display="block";
+        y.style.right="-200px";
+        y.style.top="-200px";
+        document.querySelector("header .fa-times").style.display="none"; 
+    
+        
+    }
+    function my(x){
+        if(x.matches){
+        var x=document.querySelectorAll("header nav ul li");
+        var y=document.querySelector("header nav");
+      
+        y.style.display="block";
+        y.style.right="-200px";
+    
+        x[0].style.display="inline-block";
+        x[1].style.display="inline-block";
+        x[2].style.display="inline-block";
+      
+        document.querySelector("header .fa-times").style.display="none"; 
+       
+
+    }
+    }
+
+    var mc=window.matchMedia("(min-width:1100px)");
+my(mc);
+mc.addListener(my);
+
+
+ 
+</script>
 </body>
 </html>

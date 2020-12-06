@@ -21,7 +21,7 @@ body{
     position: relative;
     transition: 0.6s;
     overflow: hidden;
-    background-image: linear-gradient(rgb(128, 128, 219),rgb(224, 81, 193));
+    background-image: linear-gradient(rgb(226, 96, 35),rgb(213, 27, 238));
   
   }
 .container form{
@@ -57,7 +57,7 @@ form input{
 form button{
     width: 120px;
     height: 35px;
-    background-color: rgb(236, 167, 16);
+    background-color: none;
     color: rgb(240, 12, 12);
     border-radius: 10px;
     border:none;
@@ -65,6 +65,7 @@ form button{
     border:2px solid red;
     box-shadow: 0 0 3px 3px orange;
     margin-right: 20px;
+    font-size: 20px;
 }
 #form2{
     left:550px;

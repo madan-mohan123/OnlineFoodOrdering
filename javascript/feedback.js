@@ -26,6 +26,7 @@ fast.onclick=function(){
     form1.style.left="-550px";
     form2.style.left="40px";
     pro.style.width="366.6px";
+    
   
 }
 back1.onclick=function(){

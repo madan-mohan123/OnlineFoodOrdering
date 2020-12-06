@@ -17,6 +17,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+  
   }
   .arti{
     width: 300px;
@@ -44,17 +45,21 @@
     padding-top: 10px;
     width: 400px;
     height: 500px;
-    /* background-color: white; */
+  
+    position: relative;
+    left:0;
+    top:0;
+  
     background-image: linear-gradient(teal,white);
-    /* margin: 100px auto; */
+   
     border-radius: 30px 0 0 30px;
-    /* float: left; */
+   
   }
   .container-2 img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    /* box-shadow: 0 0 10px 3px orange; */
+  
     margin: auto;
 margin-bottom: 40px;
     display: block;
@@ -62,7 +67,7 @@ margin-bottom: 40px;
   .container-2 h2 {
     color: rgb(223, 17, 17);
     text-align: center;
-    /* text-shadow: 2px 2px 2px 2px orange; */
+  
     padding: 30px 0 20px 0;
   }
 
@@ -82,7 +87,7 @@ margin-bottom: 40px;
 
   .container-2 input[type="submit"] {
     display: block;
-    /* background-color: rgb(224, 77, 24); */
+   
     width: 120px;
     height: 40px;
     border-radius: 20px;
@@ -92,8 +97,8 @@ margin-bottom: 40px;
     color: black;
     border: 2px solid yellowgreen;
     background-color: rgb(223, 88, 10);
-
-    /* background-image: linear-gradient(green,orange); */
+color: white;
+font-family: sans-serif;
   }
   .container-2 .forget {
     margin-top: 75px;
@@ -115,8 +120,8 @@ margin-bottom: 40px;
   }
   .social i {
     margin-right: 20px;
-    color: rgb(235, 24, 8);
-    font-size: 20px;
+  
+    font-size: 25px;
   }
   input[type="submit"]:hover {
     position: relative;
@@ -137,6 +142,19 @@ margin-bottom: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    bottom: 0;
+
+  }
+
+  .container-2 .fa-facebook{
+color:rgb(69, 69, 212);
+  }
+  .container-2 .fa-twitter{
+color: teal;
+  }
+  .container-2 .fa-google-plus{
+    color: white;;
   }
   .container-1 .forget {
    /* border: 2px solid black; */
@@ -164,17 +182,20 @@ margin-bottom: 40px;
    font-size: 20px;  
 }
 .form-control{
-  /* border: 2px solid red; */
+
   padding-left:9px;
   padding-right:9px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .form-control input{
   display: inline-block;
-  width: 95%;
+  width: 98%;
   height: 40px;
   margin: 0 auto;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  background-color: #fff;
 }
 .msg{
   margin-top: 5px;
@@ -193,4 +214,11 @@ margin-bottom: 40px;
 .container-2 input {
 
 padding:0 10px 0 5px;
+}
+.myform-control input:focus{
+color: #495057;
+background-color: #fff;
+border-color: #80bdff;
+outline: 0;
+box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }

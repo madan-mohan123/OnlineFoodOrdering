@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" href="css_files/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+     <link rel="stylesheet" href="css_files/bootstrap.min.css">
     <link rel="stylesheet" href="css_files/index.css">
+    <script src="javascript/jquery-3.5.1.js"></script>
     <title>Hot Food</title>
-   
- 
 </head>
 <body>
     <div class="container-fluid ">
@@ -53,80 +52,7 @@
         </section>
      
 
-        <!-- <section class="section-2 ">   
-<p>MORE THAN <span style="color:orange">500+ DISHES</span>  TO ORDER</p>
-<h2 style="text-align: center;color: white;opacity: 0.8;"> Welcome to the best online ordering services</h2>
-<div class="row pl-2 pr-2 no-gutters">
-  <div class="col-sm-6 col-md-3 col-lg-3 col-xs-4 pl-2 pr-2">
-<div class="card text-left">
-  <img class="card-img-top" src="images/pizza.jpg" alt="">
-  <div class="card-body">
-    <h4 class="card-title">Pizza</h4>
-    <p class="card-text">
-      <span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span>
-    </p>
-  </div>
-</div>
-
-    </div>
-    <div class="col-sm-6 col-md-3 col-lg-3 col-xs-4 pl-2 pr-2">
-        <div class="card text-left">
-          <img class="card-img-top" src="images/burger.jpg" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Burger</h4>
-            <p class="card-text">
-              <span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star"></span>
-            </p>
-          </div>
-        </div>
-        
-            </div>
-            <div class="col-sm-6 col-md-3 col-lg-3 col-xs-4 pl-2 pr-2">
-                <div class="card text-left">
-                  <img class="card-img-top" src="images/aloo mattar.jpg" alt="">
-                  <div class="card-body">
-                    <h4 class="card-title">Aloomatar</h4>
-                    <p class="card-text">
-                      <span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span>
-                    </p>
-                  </div>
-                </div>
-                
-                    </div>
-                    <div class="col-sm-6 col-md-3 col-lg-3 col-xs-4 pl-2 pr-2">
-                        <div class="card text-left">
-                          <img class="card-img-top" src="images/cake.jpg" alt="">
-                          <div class="card-body">
-                            <h4 class="card-title">Cake</h4>
-                            <p class="card-text">
-                              <span class="fa fa-star checked"></span>
-                              <span class="fa fa-star checked"></span>
-                              <span class="fa fa-star checked"></span>
-                              <span class="fa fa-star"></span>
-                              <span class="fa fa-star"></span></p>
-                          </div>
-                        </div>
-                        
-                            </div>
-                        
-</div>
-<a href="html/Search.html">More category</a>
-        </section>
-
-
- -->
+    
 
 
         <section class="section-2 " >   
@@ -259,8 +185,7 @@
                                                                 <button  class="mypre" onclick="mplusSlides(-1)">&#10094;</button>
                                                                 <button class="mynext" onclick="mplusSlides(1)">&#10095;</button>
           </div>
-          <!-- <button  class="mypre" onclick="mplusSlides(-1)">&#10094;</button>
-    <button class="mynext" onclick="mplusSlides(1)">&#10095;</button> -->
+       
           <a href="html/Search.html">More category</a>
                   </section>
 
@@ -538,142 +463,7 @@
     </div>
         </div>
        
-        <script>
-  var slideIndex = 1;
-showSlides(slideIndex);
+      <script src="javascript/index.js"></script>
 
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-
-}
-
-
-function showSlides(n) {
-
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-
-  if (n > slides.length) {
-      slideIndex = 1
-      } 
-  if (n < 1) {
-      slideIndex = slides.length
-      }
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
-  }
-
-  slides[slideIndex-1].style.display = "block"; 
-
-}
-        </script>
-
-
-<script>
-  var slidein = 4;
-function mplusSlides(n) {
-  if(n>0){
-  mshowSlides(slidein += n);
-  }
-  else{
-    mshowSlidesminus(slidein += n);
-  }
-}
-
-
-function mshowSlides(n) {
-  var i;
-  var mslides = document.getElementsByClassName("mycarts");
-
-  if (n > mslides.length) {
-      slidein = mslides.length;
-      } 
-  if (n < 1) {
-      slidein = mslides.length;
-      }
-if(n <= mslides.length && n>4){
-  mslides[n-5].style.display = "none"; 
-  mslides[n-1].style.display = "block"; 
-  mslides[n-2].style.display = "block"; 
-  mslides[n-3].style.display = "block"; 
-  mslides[n-4].style.display = "block"; 
-}
-
-}
-
-function mshowSlidesminus(n) {
-  
-  var i;
-  var mslides = document.getElementsByClassName("mycarts");
-  if (n > mslides.length) {
-      slidein = mslides.length;
-      } 
-  if (n < 4) {
-      slidein = 4;
-      }
-if(n <= mslides.length && n>=4){
-  mslides[n-1].style.display = "block"; 
-  mslides[n-2].style.display = "block"; 
-  mslides[n-3].style.display = "block"; 
-  mslides[n-4].style.display = "block"; 
-  mslides[n].style.display = "none"; 
-}
-
-}
-        </script>
-
-
-
-<script>
-    function sidebar(){
-        var x=document.querySelectorAll("header nav ul li");
-        var y=document.querySelector("header nav");
-        y.style.display="block";
-        y.style.right="0px";
-        x[0].style.display="block";
-        x[1].style.display="block";
-        x[2].style.display="block";
-    y.style.top="0px";
-        document.querySelector("header .fa-times").style.display="block";
-        
-        
-    }
-    function closesidebar(){
-      
-        var y=document.querySelector("header nav");
-      
-        y.style.display="block";
-        y.style.right="-200px";
-        y.style.top="-200px";
-        document.querySelector("header .fa-times").style.display="none"; 
-    
-        
-    }
-    function my(x){
-        if(x.matches){
-        var x=document.querySelectorAll("header nav ul li");
-        var y=document.querySelector("header nav");
-      
-        y.style.display="block";
-        y.style.right="-200px";
-    
-        x[0].style.display="inline-block";
-        x[1].style.display="inline-block";
-        x[2].style.display="inline-block";
-      
-        document.querySelector("header .fa-times").style.display="none"; 
-       
-
-    }
-    }
-
-    var mc=window.matchMedia("(min-width:1100px)");
-my(mc);
-mc.addListener(my);
-
-
- 
-</script>
 </body>
 </html>

@@ -38,8 +38,9 @@ $i++;
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="../css_files/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="../css_files/bootstrap.min.css">
 
+    <!-- <link rel="stylesheet" href="../css_files/index.css"> -->
     <title>Hotel DashBoard</title>
     <link rel="stylesheet" href="../css_files/hoteldashboard.css">
     <style>
@@ -125,17 +126,42 @@ font-family: sans-serif;
       margin-bottom:10px;
 display:block;
     }
+    .container-fluid{
+      margin:0;
+      padding:0;
+    }
+
+
+    .section-2{
+  width: 100%;
+  padding-bottom: 50px;
+  background-color: rgba(209, 197, 197,0.5);
+  }
+ 
+
+ .section-2 img{
+   height: 12rem; 
+ }
+ .card{
+  
+    margin-bottom: 15px;
+  }
+  .checked{
+    color: orange;
+  }
+
+ 
 
 </style> 
 </head>
 <body>
-    <div class="container" id="blur">
+    <div class="container-fluid" id="blur">
         <header>
             <img src="../images/logo.png"  alt="">
             <p><b>Order <span style="color: rgb(9, 223, 238); opacity: 0.7;font-size:30px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> Food Now</span></b></p>
            <nav>
             <ul>
-                <li><a href="#" class="bar">B</a></li>
+               
                 <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>home</a></li>
 
                      
@@ -147,8 +173,12 @@ display:block;
                        
                     </li>
 
-                </li>
-                <li><a href="#" class="cbar">C</a></li> 
+                    <li> 
+                  <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+              </form></li>
+                
               
             </ul>
            </nav>
@@ -169,9 +199,9 @@ if(mysqli_num_rows($result1)){
          <h1></h1>
         </section>
 
-        <section class="slideshow-container">
+        <section class="mslideshow-container">
 
-          <div class="mySlides fade">
+          <div class="mySlides mfade">
         
             <img src="../images/r1.png" >
 
@@ -179,27 +209,27 @@ if(mysqli_num_rows($result1)){
           
           </div>
         
-          <div class="mySlides fade">
+          <div class="mySlides mfade">
           
             <img src="../images/r2.jpg" >
             <h2 style="color: white;text-align: center;">GIVE YOU FRESH FOOD</h2>
           
           </div>
         
-          <div class="mySlides fade">
+          <div class="mySlides mfade">
            
             <img src="../images/r3.jpg" >
             <h2 style="color: white;text-align: center;">ORDER IN FEW MINUTES INTO YOUR HOMES</h2>
           
           </div>
-          <div class="mySlides fade">
+          <div class="mySlides mfade">
         
             <img src="../images/r4.jpg" >
             <h2 style="color: white;text-align: center;">FOOD WITH MONEY BACK</h2>
           
           </div>
         
-          <div class="mySlides fade">
+          <div class="mySlides mfade">
           
             <img src="../images/r5.jpg" >
           
@@ -216,7 +246,7 @@ if(mysqli_num_rows($result1)){
             <tr>
                   <th>S.N</th>
                   <th>Food</th>
-                  <th>Fees</th>
+                  <th>Cost</th>
                   <th>Preview</th>
                   <th>Delete</th>
                 </tr>
@@ -241,17 +271,179 @@ for($j=0 ;$j<$i ; $j++){
 
               </table>
         </section>
-        <p style="text-align: center; font-size: 80px; color: blue;margin: 40px 0 30px 0;text-shadow: 0 0 10px 10px teal;">Best Cooks of The Hotel</p>
+        <p style="text-align: center; font-size: 80px; color: blue;margin: 40px 0 30px 0;text-shadow: 0 0 10px 10px teal;">Food Gallery</p>
        
+
+
+        <section class="section-2 " >   
+         
+ 
+         <div class="row pl-2 pr-2 no-gutters" >
+             <div class="col-sm-6 col-md-3 col-lg-3 col-xs-4 pl-2 pr-2 mycarts">
+         <div class="card text-left">
+           <img class="card-img-top" src="../images/aloo gobi.jpg" alt="">
+           <div class="card-body">
+            
+             <hr>
+            
+             <p class="card-text">
+               <span class="fa fa-star checked"></span>
+         <span class="fa fa-star checked"></span>
+         <span class="fa fa-star checked"></span>
+         <span class="fa fa-star"></span>
+         <span class="fa fa-star"></span>
+             </p>
+           </div>
+         </div>
+         
+             </div>
+             <div class="col-sm-6 col-md-3 col-lg-3 col-xs-4 pl-2 pr-2 mycarts">
+                 <div class="card text-left">
+                   <img class="card-img-top" src="../images/aloo mattar.jpg" alt="">
+                   <div class="card-body">
+                 
+                     <hr>
+                  
+            
+                     <p class="card-text">
+                       <span class="fa fa-star checked"></span>
+         <span class="fa fa-star checked"></span>
+         <span class="fa fa-star checked"></span>
+         <span class="fa fa-star checked"></span>
+         <span class="fa fa-star"></span>
+                     </p>
+                   </div>
+                 </div>
+                 
+                     </div>
+                     <div class="col-sm-6 col-md-3 col-lg-3 col-xs-4 pl-2 pr-2 mycarts">
+                         <div class="card text-left">
+                           <img class="card-img-top" src="../images/bhatura.gif" alt="">
+                           <div class="card-body">
+                            
+                             <hr>
+                             
+            
+                             <p class="card-text">
+                               <span class="fa fa-star checked"></span>
+         <span class="fa fa-star checked"></span>
+         <span class="fa fa-star checked"></span>
+         <span class="fa fa-star"></span>
+         <span class="fa fa-star"></span>
+                             </p>
+                           </div>
+                         </div>
+                         
+                             </div>
+                             <div class="col-sm-6 col-md-3 col-lg-3 col-xs-4 pl-2 pr-2 mycarts">
+                                 <div class="card text-left">
+                                   <img class="card-img-top" src="../images/burger.jpg" alt="">
+                                   <div class="card-body">
+                               
+                                     <hr>
+                                    
+            
+                                     <p class="card-text">
+                                       <span class="fa fa-star checked"></span>
+                                       <span class="fa fa-star checked"></span>
+                                       <span class="fa fa-star checked"></span>
+                                       <span class="fa fa-star"></span>
+                                       <span class="fa fa-star"></span></p>
+                                   </div>
+                                 </div>
+                                 
+                                     </div> 
+                                     
+</div>
+
+<div class="row pl-2 pr-2 no-gutters" >
+                                     <div class="col-sm-6 col-md-3 col-lg-3 col-xs-4 pl-2 pr-2 mycarts" >
+                         <div class="card text-left">
+                           <img class="card-img-top" src="../images/cake.jpg" alt="">
+                           <div class="card-body">
+                          
+                             <hr>
+                         
+            
+                             <p class="card-text">
+                               <span class="fa fa-star checked"></span>
+         <span class="fa fa-star checked"></span>
+         <span class="fa fa-star checked"></span>
+         <span class="fa fa-star"></span>
+         <span class="fa fa-star"></span>
+                             </p>
+                           </div>
+                         </div>
+                                       
+                                           </div>  
+                                           <div class="col-sm-6 col-md-3 col-lg-3 col-xs-4 pl-2 pr-2 mycarts" >
+                                 <div class="card text-left">
+                                   <img class="card-img-top" src="../images/chesse.jpg" alt="">
+                                   <div class="card-body">
+                                  
+                                     <hr>
+                                  
+            
+                                     <p class="card-text">
+                                       <span class="fa fa-star checked"></span>
+                                       <span class="fa fa-star checked"></span>
+                                       <span class="fa fa-star checked"></span>
+                                       <span class="fa fa-star"></span>
+                                       <span class="fa fa-star"></span></p>
+                                   </div>
+                                 </div>
+                                 
+                                     </div> 
+                                     <div class="col-sm-6 col-md-3 col-lg-3 col-xs-4 pl-2 pr-2 mycarts" >
+                                 <div class="card text-left">
+                                   <img class="card-img-top" src="../images/gajar.jpg" alt="">
+                                   <div class="card-body">
+                                  
+                                     <hr>
+                                  
+            
+                                     <p class="card-text">
+                                       <span class="fa fa-star checked"></span>
+                                       <span class="fa fa-star checked"></span>
+                                       <span class="fa fa-star checked"></span>
+                                       <span class="fa fa-star"></span>
+                                       <span class="fa fa-star"></span></p>
+                                   </div>
+                                 </div>
+                                 
+                                     </div> 
+                                     <div class="col-sm-6 col-md-3 col-lg-3 col-xs-4 pl-2 pr-2 mycarts" >
+                                 <div class="card text-left">
+                                   <img class="card-img-top" src="../images/gullab.jpg" alt="">
+                                   <div class="card-body">
+                                  
+                                     <hr>
+                                  
+            
+                                     <p class="card-text">
+                                       <span class="fa fa-star checked"></span>
+                                       <span class="fa fa-star checked"></span>
+                                       <span class="fa fa-star checked"></span>
+                                       <span class="fa fa-star"></span>
+                                       <span class="fa fa-star"></span></p>
+                                   </div>
+                                 </div>
+                                 
+                                     </div> 
+                                                 
+                                                               
+         </div>
+      
+                 </section>
+
+                 <p style="text-align: center; font-size: 80px; color: blue;margin: 40px 0 30px 0;text-shadow: 0 0 10px 10px teal;">Cooks of the hotel</p>
         <section class="cooks">
-            <img src="../images/cook1.jpg" alt="">
-            <img src="../images/cook2.jpg" alt="">
-            <img src="../images/cook3.jpg" alt="">
-            <img src="../images/cook4.jpg" alt="">
-            <img src="../images/cook5.jpg" alt="">
+            <img src="../images/cook1.jpg" alt="" class="cook1">
+            <img src="../images/cook2.jpg" alt="" class="cook1">
+            <img src="../images/cook3.jpg" alt="" class="cook1">
+            <img src="../images/cook4.jpg" alt="" class="cook1">
+            <img src="../images/cook5.jpg" alt="" class="cook1">
         </section>
-
-
 
 
 
@@ -360,5 +552,7 @@ echo '<input type="text" name="hotelid" style="display:none;"  value="';echo $my
                     document.getElementById("blur").style.opacity="1";
          }
                 </script>
+
+
 </body>
 </html>

@@ -338,7 +338,7 @@ body{
   }
   
   
-  .slideshow-container {
+  .mslideshow-container {
   /* max-width: 1000px; */
   position: relative;
   /* margin: auto; */
@@ -389,7 +389,7 @@ body{
   .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
   }
-  .fade h2{
+  .mfade h2{
     position: absolute;
     top:200px;
     left:20%;
@@ -398,7 +398,7 @@ body{
     font-size: 70px;
     transition: 2.5s;
   }
-  .fade h2:hover{
+  .mfade h2:hover{
     text-shadow: 0 0 20px 20px rgb(218, 120, 9);
     transform: scale(0.8);
   

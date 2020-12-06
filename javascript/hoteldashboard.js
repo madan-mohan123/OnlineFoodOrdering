@@ -1,4 +1,4 @@
-var quate1=document.querySelector(".fade h2");
+var quate1=document.querySelector(".mfade h2");
 var ch=0;
 function zoom(){
 if(ch==0){
@@ -34,7 +34,7 @@ else if(ch==4){
 else if(ch==5){
     quate1.style.transform="scale(1.3)";
     //quate1.style.transform="rotateY(-360deg)";
-   
+  
     ch=6;
 }
 

@@ -20,16 +20,17 @@
             </div>
           
         </div>
-        <h1 style="text-align: center;margin: 20px;color: whitesmoke;">Fill below details</h1>
+        <h1 style="text-align: center;margin: 20px;color: whitesmoke;">Hotels Details</h1>
 
 
         <!-- hotel form  -->
-        <div class="tenant-form">
+        <div class="hotel-form">
             
             <form action="../php/hotelform.php" method="POST" enctype="multipart/form-data">
 
                 <label for="name" style="padding-top: 20px;">Restaurant Name</label>
 <input type="text" id="name" placeholder="Hotel Name" name="name" required>
+
 
 <label for="email">Email</label>
 <input type="email" id=email placeholder="Email" name="email" required> 
@@ -38,11 +39,16 @@
 
 
 <label style="color: black;">Veg/Nonveg</label>
+<div class="btn">
+    <div class="foodveg">
     <input type="checkbox" name="foodtype1" id="type1" value="veg" style="display: inline-block;width: 15px;height: 15px;" >
-    <label for="condition" for="type1" style="display: inline-block;width:150px ;margin-left: 10px;">Veg</label>
- 
+    <label for="condition" for="type1" style="display: inline-block;width:150px ;margin-left: 5px;">Veg</label>
+    </div>
+    <div class="foodveg">
     <input type="checkbox" name="foodtype2" id="type2" value="nonveg" style="display: inline-block;width: 15px;height: 15px;" >
-    <label for="agree"  for="type2" style="display: inline-block;width:150px;margin-left: 10px;">Non-veg</label>
+    <label for="agree"  for="type2" style="display: inline-block;width:150px;margin-left: 5px;">Non-veg</label>
+</div>
+</div>
 
 
 
@@ -52,24 +58,24 @@
 
     <label for="contact">Hotel Pic</label>
     <input type="file"  id="pic" name="pic"  required>
-
-    
+    <div class="btn">
+    <div class="foodveg">
     <input type="checkbox" id="condition" style="display: inline-block;width: 15px;height: 15px;" required>
     <label for="condition" style="display: inline-block;width:200px ;margin-left: 20px;">Accept Term and Condition.</label>
+    
+    </div>
+    <div class="foodveg">
     <input type="checkbox" id="agree" style="display: inline-block;width: 15px;height: 15px;" required>
     <label for="agree" style="display: inline-block;width:200px;margin-left: 20px;">I Agrees.</label>
-    
+    </div>
+    </div>
+    <div class="btn">
     <button type="submit">Submit</button>
     <button type="reset">reset</button>
-           
+    </div>
+    </form>
         </div>
         </div>
-        <script>
-               function close1(){
-               
-             document.getElementById("close").style.display="none";
-          }
-        
-        </script>
+     
 </body>
 </html>

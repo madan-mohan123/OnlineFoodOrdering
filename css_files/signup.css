@@ -181,3 +181,45 @@ padding:0 10px 0 5px;
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
   }
+  @media (max-width:760px){
+
+    .container-2 {
+     display: block;
+     border-radius: 30px;
+     margin: auto;
+     
+    }
+    .arti{
+      display: block;
+      padding-bottom: 20px;
+      margin-top: 20px;
+      margin: auto;
+    }
+  
+    .container{
+      display: block;
+      padding-top: 60px;
+     
+    }
+  
+  }
+  @media (max-width:1100px) and (min-width:760px){
+    .arti{
+      display: block;
+      padding-bottom: 40px;
+      margin: auto;
+    }
+
+    .container{
+      display: block;
+      padding-top: 90px;
+     
+    }
+
+    .container-2 {
+      display: block;
+      border-radius: 30px;
+      margin: auto;
+      
+  }
+}

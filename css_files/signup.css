@@ -17,6 +17,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    min-width: 420px;
   }
   .arti{
     width: 300px;
@@ -187,19 +188,26 @@ padding:0 10px 0 5px;
      display: block;
      border-radius: 30px;
      margin: auto;
+     min-width: 400px;
      
     }
     .arti{
       display: block;
-      padding-bottom: 20px;
+      padding-bottom: 10px;
       margin-top: 20px;
       margin: auto;
     }
   
     .container{
       display: block;
-      padding-top: 60px;
+      padding-top: 10px;
      
+    }
+    .arti h1{
+      font-size: 25px;
+    }
+    .arti h2{
+      font-size: 20px;
     }
   
   }
@@ -212,7 +220,7 @@ padding:0 10px 0 5px;
 
     .container{
       display: block;
-      padding-top: 90px;
+      padding-top: 80px;
      
     }
 

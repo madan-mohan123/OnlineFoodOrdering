@@ -2,7 +2,7 @@
 <h3 align="center">FULLSTACK WEB DEVELOPMENT PROJECT </h3>
 <h3 align="center"> ON </h3>
 <h3 align="center">ONLINE FOOD ORDERING SYSTEM</h3>
-<img align="center" src="https://upload.wikimedia.org/wikipedia/en/4/42/GLA_University_logo.png" />
+<p align="center"> <img src="https://upload.wikimedia.org/wikipedia/en/4/42/GLA_University_logo.png" /></p>
 
 <h3 align="center">Department of Computer Engineering & Application</h3>
 <h3 align="center">Institute of Engineering & Technology</h3>

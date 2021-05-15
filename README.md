@@ -17,7 +17,7 @@ Mathura- 281406, INDIA
 - Mohan Agrawal (181500385) 
 - Project Supervisor: Mr. Pankaj Kapoor, Senior Technical Trainer
 
-<video src="./video/food.mp4"> </video>
+<video src="https://screenrec.com/share/faEGzCM9TR"> </video>
 ## Introduction to the Project:
 - Online Food Ordering System is an application which will help restaurant and the customers directly. Now customers don’t need to go out anywhere to find best food items in their locality. They will get served on their doorsteps. They also get a very large variety of food that they do not find in a single restaurant after visiting there. They can also submit their honest reviews about restaurants, food product received and about the application to enhance their experience.
 This will help restaurants in the management point of view, as the manager will be able to optimize the dishes according to the people’s reviews and will be able to see the records of each employees and orders. This application will also help the restaurants to do all functionalities in more accurately and faster way. It reduces manual works and improves the efficiency of restaurant.

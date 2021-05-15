@@ -1,35 +1,26 @@
 
-### FULLSTACK WEB DEVELOPMENT PROJECT
+<h1 align="center">FULLSTACK WEB DEVELOPMENT PROJECT </h1>
+<h1 align="center"> ON </h1>
+<h1 align="center">ONLINE FOOD ORDERING SYSTEM</h1>
+<img src="https://upload.wikimedia.org/wikipedia/en/4/42/GLA_University_logo.png" />
 
-             ## ON
-
-##  ONLINE FOOD ORDERING SYSTEM
-
-# Department of Computer Engineering & Application
-# Institute of Engineering & Technology
-
- 
+<h3 align="center">Department of Computer Engineering & Application</h3>
+<h2 align="center">Institute of Engineering & Technology</h2>
 <h3 align="center">GLA University
 Mathura- 281406, INDIA
 2020 </h3>
 
 ## Submitted By:
-- Shubham Sharma (181500696)             - Udit Aggarwal (181500765)
-- Madan Mohan (181500354)                - Mohan Agrawal (181500385) 
-
+- Shubham Sharma (181500696)            
+- Udit Aggarwal (181500765)
+- Madan Mohan (181500354)                
+- Mohan Agrawal (181500385) 
 - Project Supervisor: Mr. Pankaj Kapoor, Senior Technical Trainer
 
 ## Introduction to the Project:
-
 - Online Food Ordering System is an application which will help restaurant and the customers directly. Now customers don’t need to go out anywhere to find best food items in their locality. They will get served on their doorsteps. They also get a very large variety of food that they do not find in a single restaurant after visiting there. They can also submit their honest reviews about restaurants, food product received and about the application to enhance their experience.
 This will help restaurants in the management point of view, as the manager will be able to optimize the dishes according to the people’s reviews and will be able to see the records of each employees and orders. This application will also help the restaurants to do all functionalities in more accurately and faster way. It reduces manual works and improves the efficiency of restaurant.
 - The online food ordering system gives restaurants the ability to increase sales and expand their business by giving customers the facility to order food online. The customer can see restaurant menu online and they can easily place order with a simple mouse click. Also, with a food menu online we can easily track the orders, maintain customer’s database and improve the food delivery service. The restaurants’ can even customize online restaurant menu and upload images easily. Having restaurant menu on internet, potential customers can easily access it and place order at their convenience.
-
-
-
-
-
-
 
 ## Problem Statement:
 
@@ -41,18 +32,15 @@ This will help restaurants in the management point of view, as the manager will 
 - The main objective of the Online Food Ordering System is to manage the details of Item Category, Customer, Food, Delivery Address, Order, Shopping Cart. Also, to provide great experience for online food ordering. It will show the reviews about the selected food item to the customer to help him/her to get best food according to his/her preferences. It will also help in managing the order information.
 
 ## Working Methodology:
-
-- It outlines how data will be collected and tools for collecting data. Model view controller (MVC) is software design for developing web applications. It consists three parts like
+It outlines how data will be collected and tools for collecting data. Model view controller (MVC) is software design for developing web applications. It consists three parts like
 1. Model -The lowest level of the pattern which is responsible for maintaining data.
 2. View-It is responsible for displaying all or a portion of the data to the user.
 3. Controller-Software code that controls the interaction between model and view.
 MVC isolates the application logic from the user interface layer and supports separation of concern. Here controller receive all requests for the application and then work with model to prepare any data needed by the view. The view then uses the data prepared by the controller to generate a final presentable response. It can be understood with the following diagram.
 
- 
-- In this project we made a web application for food ordering. There are different modules to perform the task related to restaurant like managing the customer details, food order detail and transaction details. It gives the ease of access of food ordering to any person at any place. There are at least 8-9 web pages that handles the application. We use the HTML, CSS, bootstraps, jQuery for front end and php and MySQL database for making it dynamic website.
+In this project we made a web application for food ordering. There are different modules to perform the task related to restaurant like managing the customer details, food order detail and transaction details. It gives the ease of access of food ordering to any person at any place. There are at least 8-9 web pages that handles the application. We use the HTML, CSS, bootstraps, jQuery for front end and php and MySQL database for making it dynamic website.
 
 ## Hardware and Software Requirements:
-
 - Hardware Requirements: -
 •	RAM of 4GB or Higher
 •	Hard disk of minimum 256GB
@@ -90,16 +78,6 @@ For maintaining the project schedules & meeting with team member, we created an 
 20-oct-2020: Coding process
 30-oct-2020: Testing
 15-nov-2020: Project report
-
-
-
-
-
-
-
-
-
-
 
 ## Conclusion:
 

@@ -1,11 +1,11 @@
 
-<h1 align="center">FULLSTACK WEB DEVELOPMENT PROJECT </h1>
-<h1 align="center"> ON </h1>
-<h1 align="center">ONLINE FOOD ORDERING SYSTEM</h1>
-<img src="https://upload.wikimedia.org/wikipedia/en/4/42/GLA_University_logo.png" />
+<h3 align="center">FULLSTACK WEB DEVELOPMENT PROJECT </h3>
+<h3 align="center"> ON </h3>
+<h3 align="center">ONLINE FOOD ORDERING SYSTEM</h3>
+<img align="center" src="https://upload.wikimedia.org/wikipedia/en/4/42/GLA_University_logo.png" />
 
 <h3 align="center">Department of Computer Engineering & Application</h3>
-<h2 align="center">Institute of Engineering & Technology</h2>
+<h3 align="center">Institute of Engineering & Technology</h3>
 <h3 align="center">GLA University
 Mathura- 281406, INDIA
 2020 </h3>
@@ -17,6 +17,7 @@ Mathura- 281406, INDIA
 - Mohan Agrawal (181500385) 
 - Project Supervisor: Mr. Pankaj Kapoor, Senior Technical Trainer
 
+<video> </video>
 ## Introduction to the Project:
 - Online Food Ordering System is an application which will help restaurant and the customers directly. Now customers don’t need to go out anywhere to find best food items in their locality. They will get served on their doorsteps. They also get a very large variety of food that they do not find in a single restaurant after visiting there. They can also submit their honest reviews about restaurants, food product received and about the application to enhance their experience.
 This will help restaurants in the management point of view, as the manager will be able to optimize the dishes according to the people’s reviews and will be able to see the records of each employees and orders. This application will also help the restaurants to do all functionalities in more accurately and faster way. It reduces manual works and improves the efficiency of restaurant.
